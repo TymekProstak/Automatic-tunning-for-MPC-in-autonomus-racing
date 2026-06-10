@@ -1,0 +1,14 @@
+float32 epsi_avg
+float32 ey_avg
+float32 epsi_current
+float32 ey_current
+float32 next_v_x_target
+float32 ay_target
+float32 kappa_ref
+float32 R_ref
+float32 v_s_current
+float32 v_s_avg
+float32 next_yaw_rate_target
+float32 ax_target
+float32 mpc_yaw_rate_from_curvature
+bool solver_failed

@@ -1,0 +1,217 @@
+{
+  "episodes_done": 896,
+  "trials_done": 224,
+  "top10": [
+    {
+      "rank": 1,
+      "candidate_id": 64,
+      "objective_cost": -25.911174918678615,
+      "mean_cost": -26.751130106250002,
+      "std_cost": 0.839955187571389,
+      "robust_cost": -25.911174918678615,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 1.5731558689720377,
+        "mpc.cost.Q_epsi": 31.933851750662274,
+        "mpc.cost.R_dT": 1.7340740724816857,
+        "mpc.cost.R_u_ddelta_cmd": 2.1872519257754877,
+        "mpc.cost.R_Mtv": 2.8093931226608107e-07,
+        "mpc.cost.Q_beta": 1.9639751793796,
+        "mpc.bounds.max_vx": 14.776261241118675,
+        "mpc.model.mux": 1.3459442162281872,
+        "mpc.model.muy": 1.3923327887031718,
+        "mpc.cost.q_sdot": 0.3246342929295847
+      }
+    },
+    {
+      "rank": 2,
+      "candidate_id": 55,
+      "objective_cost": -25.016586728628983,
+      "mean_cost": -25.621726106249998,
+      "std_cost": 0.605139377621016,
+      "robust_cost": -25.016586728628983,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 7.4812849028860695,
+        "mpc.cost.Q_epsi": 18.41809877628374,
+        "mpc.cost.R_dT": 1.4364921188048316,
+        "mpc.cost.R_u_ddelta_cmd": 4.200359587931308,
+        "mpc.cost.R_Mtv": 3.4011067601378363e-06,
+        "mpc.cost.Q_beta": 3.2179830176937707,
+        "mpc.bounds.max_vx": 13.826101698803384,
+        "mpc.model.mux": 1.3630244150051984,
+        "mpc.model.muy": 1.3490800904040792,
+        "mpc.cost.q_sdot": 0.7556574200553432
+      }
+    },
+    {
+      "rank": 3,
+      "candidate_id": 63,
+      "objective_cost": -24.970344516144838,
+      "mean_cost": -25.994771787500003,
+      "std_cost": 1.0244272713551648,
+      "robust_cost": -24.970344516144838,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 2.5808453724973455,
+        "mpc.cost.Q_epsi": 6.259302142906389,
+        "mpc.cost.R_dT": 5.781385334013087,
+        "mpc.cost.R_u_ddelta_cmd": 41.1698731733773,
+        "mpc.cost.R_Mtv": 5.551848045602859e-06,
+        "mpc.cost.Q_beta": 4.123951232741328,
+        "mpc.bounds.max_vx": 14.904464593452257,
+        "mpc.model.mux": 1.4375355947308268,
+        "mpc.model.muy": 1.181934754331924,
+        "mpc.cost.q_sdot": 0.4231152891003589
+      }
+    },
+    {
+      "rank": 4,
+      "candidate_id": 143,
+      "objective_cost": -23.949117716827004,
+      "mean_cost": -25.05943451375,
+      "std_cost": 1.110316796922993,
+      "robust_cost": -23.949117716827004,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 1.170215951720377,
+        "mpc.cost.Q_epsi": 3.1216595120623523,
+        "mpc.cost.R_dT": 3.1730128682402383,
+        "mpc.cost.R_u_ddelta_cmd": 1.0762014992415851,
+        "mpc.cost.R_Mtv": 2.9312225167731823e-07,
+        "mpc.cost.Q_beta": 0.20022300370349297,
+        "mpc.bounds.max_vx": 14.609892105855439,
+        "mpc.model.mux": 1.6104576206628942,
+        "mpc.model.muy": 1.0229444255977893,
+        "mpc.cost.q_sdot": 0.5614172686563693
+      }
+    },
+    {
+      "rank": 5,
+      "candidate_id": 84,
+      "objective_cost": -23.824034217285206,
+      "mean_cost": -24.520656125000002,
+      "std_cost": 0.6966219077147974,
+      "robust_cost": -23.824034217285206,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 1.0060830438730148,
+        "mpc.cost.Q_epsi": 79.66002407573414,
+        "mpc.cost.R_dT": 1.0396252744821464,
+        "mpc.cost.R_u_ddelta_cmd": 13.440787436390197,
+        "mpc.cost.R_Mtv": 1.3913077898680803e-06,
+        "mpc.cost.Q_beta": 1.6061770754976772,
+        "mpc.bounds.max_vx": 13.807881717200427,
+        "mpc.model.mux": 1.5958349037627917,
+        "mpc.model.muy": 1.2009239740870434,
+        "mpc.cost.q_sdot": 0.18179902328122338
+      }
+    },
+    {
+      "rank": 6,
+      "candidate_id": 81,
+      "objective_cost": -23.75097678492603,
+      "mean_cost": -24.8467653125,
+      "std_cost": 1.0957885275739696,
+      "robust_cost": -23.75097678492603,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 3.2374492019248637,
+        "mpc.cost.Q_epsi": 6.22943485358812,
+        "mpc.cost.R_dT": 10.68405472428236,
+        "mpc.cost.R_u_ddelta_cmd": 26.215408852346137,
+        "mpc.cost.R_Mtv": 1.901193848312252e-08,
+        "mpc.cost.Q_beta": 6.357891806018614,
+        "mpc.bounds.max_vx": 14.558451739550037,
+        "mpc.model.mux": 1.652495332993904,
+        "mpc.model.muy": 1.0793350827641521,
+        "mpc.cost.q_sdot": 0.8101009193421451
+      }
+    },
+    {
+      "rank": 7,
+      "candidate_id": 127,
+      "objective_cost": -23.6728937352342,
+      "mean_cost": -24.39427108125,
+      "std_cost": 0.7213773460157996,
+      "robust_cost": -23.6728937352342,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 1.2446656421575797,
+        "mpc.cost.Q_epsi": 42.15806418817062,
+        "mpc.cost.R_dT": 15.422659781672314,
+        "mpc.cost.R_u_ddelta_cmd": 2.088969322788704,
+        "mpc.cost.R_Mtv": 3.739908259545524e-06,
+        "mpc.cost.Q_beta": 6.648832461031033,
+        "mpc.bounds.max_vx": 13.362353841767787,
+        "mpc.model.mux": 1.4353921144081023,
+        "mpc.model.muy": 1.1123723759484432,
+        "mpc.cost.q_sdot": 0.9202140831686916
+      }
+    },
+    {
+      "rank": 8,
+      "candidate_id": 31,
+      "objective_cost": -23.172029960899373,
+      "mean_cost": -23.9379500625,
+      "std_cost": 0.7659201016006295,
+      "robust_cost": -23.172029960899373,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 1.8509795652782384,
+        "mpc.cost.Q_epsi": 1.4197806079963626,
+        "mpc.cost.R_dT": 3.0662225515872277,
+        "mpc.cost.R_u_ddelta_cmd": 1.4294751476082117,
+        "mpc.cost.R_Mtv": 1.2837244055488952e-08,
+        "mpc.cost.Q_beta": 0.12027988076088633,
+        "mpc.bounds.max_vx": 13.57699292445646,
+        "mpc.model.mux": 1.0107618372895435,
+        "mpc.model.muy": 1.1016520920754003,
+        "mpc.cost.q_sdot": 0.891160241274827
+      }
+    },
+    {
+      "rank": 9,
+      "candidate_id": 45,
+      "objective_cost": -22.831135513480874,
+      "mean_cost": -24.4464018839375,
+      "std_cost": 1.6152663704566277,
+      "robust_cost": -22.831135513480874,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 21.623166751267345,
+        "mpc.cost.Q_epsi": 10.190953290849562,
+        "mpc.cost.R_dT": 37.952731646710475,
+        "mpc.cost.R_u_ddelta_cmd": 28.607369423207984,
+        "mpc.cost.R_Mtv": 5.468932113023885e-07,
+        "mpc.cost.Q_beta": 4.960311415904058,
+        "mpc.bounds.max_vx": 16.702228757709783,
+        "mpc.model.mux": 1.6572504137479531,
+        "mpc.model.muy": 1.1139366821033534,
+        "mpc.cost.q_sdot": 0.6275746592952883
+      }
+    },
+    {
+      "rank": 10,
+      "candidate_id": 105,
+      "objective_cost": -22.810983918199536,
+      "mean_cost": -24.86759,
+      "std_cost": 2.0566060818004646,
+      "robust_cost": -22.810983918199536,
+      "crashes": 0,
+      "theta": {
+        "mpc.cost.q_ey": 1.00791932283845,
+        "mpc.cost.Q_epsi": 44.454798495322585,
+        "mpc.cost.R_dT": 2.197027052631591,
+        "mpc.cost.R_u_ddelta_cmd": 24.91401609957356,
+        "mpc.cost.R_Mtv": 3.9901127193482244e-07,
+        "mpc.cost.Q_beta": 0.7061002230360105,
+        "mpc.bounds.max_vx": 16.55282695586054,
+        "mpc.model.mux": 1.3686161415820934,
+        "mpc.model.muy": 0.9604441602872744,
+        "mpc.cost.q_sdot": 0.6606941224053235
+      }
+    }
+  ],
+  "timestamp_unix": 1774071334.5784514
+}

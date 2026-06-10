@@ -1,0 +1,172 @@
+{
+  "config": {
+    "mode": "night_4track",
+    "catkin_ws": "/home/tymek/Desktop/fs_control_amz/TUNE_BO_GP",
+    "ws_src": "/home/tymek/Desktop/fs_control_amz/TUNE_BO_GP/src",
+    "acados_lib": "/home/tymek/Desktop/fs_control_amz/TUNE_BO_GP/src/dv_control/External/acados/install/lib",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "episodes_per_trial": 4,
+    "phase1_trials": 64,
+    "phase1_startup": 24,
+    "phase2_trials": 64,
+    "phase2_startup": 16,
+    "phase3_trials": 96,
+    "phase3_startup": 24,
+    "total_trials": 224,
+    "total_episodes": 896,
+    "pure_sim_hours": 14.933333333333334,
+    "safe_planner": {
+      "mpc.bounds.max_vx": 13.5,
+      "mpc.model.mux": 0.6,
+      "mpc.model.muy": 0.7,
+      "mpc.cost.q_sdot": 0.1
+    },
+    "planner_bounds": {
+      "mpc.bounds.max_vx": [
+        8.0,
+        18.0
+      ],
+      "mpc.model.mux": [
+        0.4,
+        1.7
+      ],
+      "mpc.model.muy": [
+        0.4,
+        1.7
+      ],
+      "mpc.cost.q_sdot": [
+        0.1,
+        1.0
+      ]
+    },
+    "cost_bounds": {
+      "mpc.cost.q_ey": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.Q_epsi": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_dT": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_u_ddelta_cmd": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_Mtv": [
+        1e-08,
+        1e-05
+      ],
+      "mpc.cost.Q_beta": [
+        0.1,
+        10.0
+      ]
+    },
+    "good_frac": 0.3,
+    "phase1_G_size": 20,
+    "phase1_L_size": 44,
+    "common_critical_crash_multiplier": 1.0,
+    "phase2_safe_planner_startup_frac": 0.35,
+    "phase2_safe_planner_sigma_frac_vmax": 0.3,
+    "phase2_safe_planner_sigma_frac_mu": 0.3,
+    "phase2_safe_planner_sigma_frac_qsdot": 0.3,
+    "top_k_cost_anchors": 3,
+    "top_k_planner_anchors": 5,
+    "phase3_planner_sigma_frac": 0.3,
+    "phase3_cost_log_sigma_frac": 0.1,
+    "gp_base_estimator": "GP",
+    "gp_acq_func": "LCB",
+    "gp_acq_optimizer": "sampling",
+    "phase1_gp_kappa": 2.4,
+    "phase2_gp_kappa": 2.2,
+    "phase3_gp_kappa": 2.4,
+    "gp_surrogate_log_cloud_n": 4096,
+    "gp_surrogate_log_topk": 5,
+    "ucb_weight": 1.0,
+    "stage3_center_theta": {
+      "mpc.bounds.max_vx": 15.861664369406547,
+      "mpc.model.mux": 1.0306713150094429,
+      "mpc.model.muy": 1.2613160879367964,
+      "mpc.cost.q_sdot": 0.8785208018175727,
+      "mpc.cost.q_ey": 1.9706130369882908,
+      "mpc.cost.Q_epsi": 1.5774883984397539,
+      "mpc.cost.R_dT": 4.567423336727594,
+      "mpc.cost.R_u_ddelta_cmd": 29.421363306517524,
+      "mpc.cost.R_Mtv": 2.187921758545489e-06,
+      "mpc.cost.Q_beta": 0.12995837614950279
+    },
+    "crash_penalty": 150.0,
+    "crash_time_penalty": 0.05
+  },
+  "results": {
+    "phase1_cost_only_gpbo": {
+      "best_objective_cost": -15.76251787462519,
+      "best_theta": {
+        "mpc.bounds.max_vx": 13.5,
+        "mpc.model.mux": 0.6,
+        "mpc.model.muy": 0.7,
+        "mpc.cost.q_sdot": 0.1,
+        "mpc.cost.q_ey": 1.9706130369882908,
+        "mpc.cost.Q_epsi": 1.5774883984397539,
+        "mpc.cost.R_dT": 4.567423336727594,
+        "mpc.cost.R_u_ddelta_cmd": 29.421363306517524,
+        "mpc.cost.R_Mtv": 2.187921758545489e-06,
+        "mpc.cost.Q_beta": 0.12995837614950279
+      }
+    },
+    "phase2_planner_only_gpbo": {
+      "best_objective_cost": -26.341725751128553,
+      "best_theta": {
+        "mpc.bounds.max_vx": 15.861664369406547,
+        "mpc.model.mux": 1.0306713150094429,
+        "mpc.model.muy": 1.2613160879367964,
+        "mpc.cost.q_sdot": 0.8785208018175727,
+        "mpc.cost.q_ey": 1.9706130369882908,
+        "mpc.cost.Q_epsi": 1.5774883984397539,
+        "mpc.cost.R_dT": 4.567423336727594,
+        "mpc.cost.R_u_ddelta_cmd": 29.421363306517524,
+        "mpc.cost.R_Mtv": 2.187921758545489e-06,
+        "mpc.cost.Q_beta": 0.12995837614950279
+      }
+    },
+    "phase3_joint_gpbo": {
+      "best_objective_cost": -26.25023814648335,
+      "best_theta": {
+        "mpc.bounds.max_vx": 15.861664369406547,
+        "mpc.model.mux": 1.0306713150094429,
+        "mpc.model.muy": 1.2613160879367964,
+        "mpc.cost.q_sdot": 0.8785208018175727,
+        "mpc.cost.q_ey": 1.9706130369882908,
+        "mpc.cost.Q_epsi": 1.5774883984397539,
+        "mpc.cost.R_dT": 4.567423336727594,
+        "mpc.cost.R_u_ddelta_cmd": 29.421363306517524,
+        "mpc.cost.R_Mtv": 2.187921758545489e-06,
+        "mpc.cost.Q_beta": 0.12995837614950279
+      }
+    },
+    "global_best": {
+      "best_objective_cost": -26.341725751128553,
+      "best_theta": {
+        "mpc.bounds.max_vx": 15.861664369406547,
+        "mpc.model.mux": 1.0306713150094429,
+        "mpc.model.muy": 1.2613160879367964,
+        "mpc.cost.q_sdot": 0.8785208018175727,
+        "mpc.cost.q_ey": 1.9706130369882908,
+        "mpc.cost.Q_epsi": 1.5774883984397539,
+        "mpc.cost.R_dT": 4.567423336727594,
+        "mpc.cost.R_u_ddelta_cmd": 29.421363306517524,
+        "mpc.cost.R_Mtv": 2.187921758545489e-06,
+        "mpc.cost.Q_beta": 0.12995837614950279
+      }
+    }
+  }
+}

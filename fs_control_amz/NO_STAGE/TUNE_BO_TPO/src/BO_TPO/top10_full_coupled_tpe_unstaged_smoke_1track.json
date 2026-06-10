@@ -1,0 +1,99 @@
+{
+  "episodes_done": 4,
+  "trials_done": 4,
+  "top10": [
+    {
+      "rank": 1,
+      "candidate_id": 4,
+      "phase": "unstaged_joint_tpe_full_coupled",
+      "phase_trial": 3,
+      "objective_cost": 151.78335,
+      "mean_cost": 151.78335,
+      "std_cost": 0.0,
+      "robust_cost": 151.78335,
+      "crashes": 1,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "mpc.bounds.max_vx": 10.5,
+        "mpc.model.mux": 0.4,
+        "mpc.model.muy": 0.4,
+        "mpc.cost.q_ey": 27.651793011129126,
+        "mpc.cost.Q_epsi": 3.597599889346679,
+        "mpc.cost.R_dT": 3.361457121155547,
+        "mpc.cost.R_u_ddelta_cmd": 24.403737942492295,
+        "mpc.cost.Q_beta": 3.1589343655367625,
+        "mpc.cost.R_Mtv": 1.5944511994325601e-07
+      }
+    },
+    {
+      "rank": 2,
+      "candidate_id": 3,
+      "phase": "unstaged_joint_tpe_full_coupled",
+      "phase_trial": 2,
+      "objective_cost": 152.37855,
+      "mean_cost": 152.37855,
+      "std_cost": 0.0,
+      "robust_cost": 152.37855,
+      "crashes": 1,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "mpc.bounds.max_vx": 10.5,
+        "mpc.model.mux": 0.4,
+        "mpc.model.muy": 0.4,
+        "mpc.cost.q_ey": 1.167307405227823,
+        "mpc.cost.Q_epsi": 4.143183081302397,
+        "mpc.cost.R_dT": 0.3233981535079938,
+        "mpc.cost.R_u_ddelta_cmd": 0.619451721170292,
+        "mpc.cost.Q_beta": 0.4179722914050373,
+        "mpc.cost.R_Mtv": 1.4343927427295275e-08
+      }
+    },
+    {
+      "rank": 3,
+      "candidate_id": 2,
+      "phase": "unstaged_joint_tpe_full_coupled",
+      "phase_trial": 1,
+      "objective_cost": 152.5692,
+      "mean_cost": 152.5692,
+      "std_cost": 0.0,
+      "robust_cost": 152.5692,
+      "crashes": 1,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "mpc.bounds.max_vx": 10.5,
+        "mpc.model.mux": 0.4,
+        "mpc.model.muy": 0.4,
+        "mpc.cost.q_ey": 0.4639747051871283,
+        "mpc.cost.Q_epsi": 1.5130893784180155,
+        "mpc.cost.R_dT": 0.3750511684741182,
+        "mpc.cost.R_u_ddelta_cmd": 16.455310156813983,
+        "mpc.cost.Q_beta": 0.029415605074504785,
+        "mpc.cost.R_Mtv": 4.995459118630065e-06
+      }
+    },
+    {
+      "rank": 4,
+      "candidate_id": 1,
+      "phase": "unstaged_joint_tpe_full_coupled",
+      "phase_trial": 0,
+      "objective_cost": 152.6112,
+      "mean_cost": 152.6112,
+      "std_cost": 0.0,
+      "robust_cost": 152.6112,
+      "crashes": 1,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "mpc.bounds.max_vx": 10.5,
+        "mpc.model.mux": 0.4,
+        "mpc.model.muy": 0.4,
+        "mpc.cost.q_ey": 10.0,
+        "mpc.cost.Q_epsi": 30.0,
+        "mpc.cost.R_dT": 10.0,
+        "mpc.cost.R_u_ddelta_cmd": 10.0,
+        "mpc.cost.Q_beta": 0.5,
+        "mpc.cost.R_Mtv": 5e-06
+      }
+    }
+  ],
+  "timestamp_unix": 1773875864.6162724
+}

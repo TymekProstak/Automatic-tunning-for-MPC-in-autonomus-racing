@@ -1,0 +1,57 @@
+<launch>
+  <!-- Launch argument: INS mode (gauss|kalman). Domyślnie gauss. -->
+  <arg name="ins_mode" default="gauss"/>
+
+  <!-- Czas trwania symulacji [s]
+       sim_time < 0  -> pętla nieskończona
+       sim_time >= 0 -> symulacja kończy się po tym czasie -->
+  <arg name="sim_time" default="120"/>
+  <arg name="low_level_controlers" default="false"/>
+  <arg name="racing_line" default="false"/>
+
+  <!-- ID toru: podmieniane z zewnątrz przez: track_id:=X -->
+  <arg name="track_id" default="1"/>
+
+  <!-- Multiplier dla critical track crash threshold -->
+  <arg name="critical_crash_multiplier" default="1.0"/>
+
+  <!-- Pierwszy node: symulacja -->
+  <node pkg="lem_simulator"
+        type="sim_loop_node"
+        name="lem_simulation_node"
+        output="screen"
+        required="true">
+    <param name="param_file" value="$(find lem_simulator)/config/params_default_lem.json"/>
+
+    <param name="cones_file" value="$(find lem_simulator)/tracks/random_track_cones_$(arg track_id).csv"/>
+    <param name="log_file"   value="$(find lem_simulator)/logs/run_default.csv"/>
+    <param name="track_file" value="$(find lem_simulator)/tracks/random_track_track_$(arg track_id).csv"/>
+
+    <!-- INS mode: gauss (default) | kalman -->
+    <param name="ins_mode" value="$(arg ins_mode)"/>
+
+    <!-- czas trwania symulacji -->
+    <param name="sim_time" value="$(arg sim_time)"/>
+    <param name="low_level_controlers" value="$(arg low_level_controlers)"/>
+
+    <!-- stage-dependent multiplier for critical crash threshold -->
+    <param name="critical_crash_multiplier" value="$(arg critical_crash_multiplier)"/>
+  </node>
+
+  <!-- Fake path planning: read CSV and publish dv_interfaces/Path on /path_planning/path -->
+  <node pkg="lem_simulator"
+        type="false_dv_path_planning_node"
+        name="false_dv_path_planning_node"
+        output="screen">
+
+    <param name="param_file" value="$(find lem_simulator)/config/lto_param.json"/>
+    <param name="track_file" value="$(find lem_simulator)/tracks/random_track_track_$(arg track_id).csv"/>
+    <param name="frame_id" value="map"/>
+    <param name="racing_line" value="$(arg racing_line)"/>
+    <param name="racing_line_file" value="$(find lem_simulator)/tracks/random_track_lto_$(arg track_id).csv"/>
+    <param name="publish_rate" value="1.0"/>
+  </node>
+
+  <!-- Fake control node for PID tuning -->
+
+</launch>

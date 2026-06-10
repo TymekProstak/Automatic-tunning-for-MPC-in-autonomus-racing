@@ -1,0 +1,762 @@
+[
+  {
+    "selection_label": "global_best_so_far_t006",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 6,
+    "source_candidate_id": 1,
+    "source_train_objective": -4.301633339732787,
+    "source_logged_mean_cost": -6.79714575,
+    "source_logged_std_cost": 2.495512410267214,
+    "source_best_objective_so_far_train": -4.301633339732787,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.4,
+      "velocity_planner.mux_dec": 0.35,
+      "velocity_planner.muy": 0.5,
+      "mpc.cost.Q_y": 10.0,
+      "mpc.cost.Q_psi": 10.0,
+      "mpc.cost.R_ddelta": 10.0
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t012",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 12,
+    "source_candidate_id": 1,
+    "source_train_objective": -4.301633339732787,
+    "source_logged_mean_cost": -6.79714575,
+    "source_logged_std_cost": 2.495512410267214,
+    "source_best_objective_so_far_train": -4.301633339732787,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.4,
+      "velocity_planner.mux_dec": 0.35,
+      "velocity_planner.muy": 0.5,
+      "mpc.cost.Q_y": 10.0,
+      "mpc.cost.Q_psi": 10.0,
+      "mpc.cost.R_ddelta": 10.0
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t018",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 18,
+    "source_candidate_id": 1,
+    "source_train_objective": -4.301633339732787,
+    "source_logged_mean_cost": -6.79714575,
+    "source_logged_std_cost": 2.495512410267214,
+    "source_best_objective_so_far_train": -4.301633339732787,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.4,
+      "velocity_planner.mux_dec": 0.35,
+      "velocity_planner.muy": 0.5,
+      "mpc.cost.Q_y": 10.0,
+      "mpc.cost.Q_psi": 10.0,
+      "mpc.cost.R_ddelta": 10.0
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t024",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 24,
+    "source_candidate_id": 1,
+    "source_train_objective": -4.301633339732787,
+    "source_logged_mean_cost": -6.79714575,
+    "source_logged_std_cost": 2.495512410267214,
+    "source_best_objective_so_far_train": -4.301633339732787,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.4,
+      "velocity_planner.mux_dec": 0.35,
+      "velocity_planner.muy": 0.5,
+      "mpc.cost.Q_y": 10.0,
+      "mpc.cost.Q_psi": 10.0,
+      "mpc.cost.R_ddelta": 10.0
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t030",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 30,
+    "source_candidate_id": 1,
+    "source_train_objective": -4.301633339732787,
+    "source_logged_mean_cost": -6.79714575,
+    "source_logged_std_cost": 2.495512410267214,
+    "source_best_objective_so_far_train": -4.301633339732787,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.4,
+      "velocity_planner.mux_dec": 0.35,
+      "velocity_planner.muy": 0.5,
+      "mpc.cost.Q_y": 10.0,
+      "mpc.cost.Q_psi": 10.0,
+      "mpc.cost.R_ddelta": 10.0
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t036",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 36,
+    "source_candidate_id": 1,
+    "source_train_objective": -4.301633339732787,
+    "source_logged_mean_cost": -6.79714575,
+    "source_logged_std_cost": 2.495512410267214,
+    "source_best_objective_so_far_train": -4.301633339732787,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.4,
+      "velocity_planner.mux_dec": 0.35,
+      "velocity_planner.muy": 0.5,
+      "mpc.cost.Q_y": 10.0,
+      "mpc.cost.Q_psi": 10.0,
+      "mpc.cost.R_ddelta": 10.0
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t042",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 42,
+    "source_candidate_id": 1,
+    "source_train_objective": -4.301633339732787,
+    "source_logged_mean_cost": -6.79714575,
+    "source_logged_std_cost": 2.495512410267214,
+    "source_best_objective_so_far_train": -4.301633339732787,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.4,
+      "velocity_planner.mux_dec": 0.35,
+      "velocity_planner.muy": 0.5,
+      "mpc.cost.Q_y": 10.0,
+      "mpc.cost.Q_psi": 10.0,
+      "mpc.cost.R_ddelta": 10.0
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t048",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 48,
+    "source_candidate_id": 47,
+    "source_train_objective": -4.717668296832825,
+    "source_logged_mean_cost": -7.550573075000001,
+    "source_logged_std_cost": 2.832904778167176,
+    "source_best_objective_so_far_train": -4.717668296832825,
+    "theta": {
+      "velocity_planner.v_max": 14.513937098273384,
+      "velocity_planner.mux_acc": 0.54704852418863,
+      "velocity_planner.mux_dec": 0.36808718238473215,
+      "velocity_planner.muy": 0.44535505941682463,
+      "mpc.cost.Q_y": 22.359554810247587,
+      "mpc.cost.Q_psi": 48.75092151997288,
+      "mpc.cost.R_ddelta": 8.759520006150735
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t054",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 54,
+    "source_candidate_id": 47,
+    "source_train_objective": -4.717668296832825,
+    "source_logged_mean_cost": -7.550573075000001,
+    "source_logged_std_cost": 2.832904778167176,
+    "source_best_objective_so_far_train": -4.717668296832825,
+    "theta": {
+      "velocity_planner.v_max": 14.513937098273384,
+      "velocity_planner.mux_acc": 0.54704852418863,
+      "velocity_planner.mux_dec": 0.36808718238473215,
+      "velocity_planner.muy": 0.44535505941682463,
+      "mpc.cost.Q_y": 22.359554810247587,
+      "mpc.cost.Q_psi": 48.75092151997288,
+      "mpc.cost.R_ddelta": 8.759520006150735
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t060",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 60,
+    "source_candidate_id": 47,
+    "source_train_objective": -4.717668296832825,
+    "source_logged_mean_cost": -7.550573075000001,
+    "source_logged_std_cost": 2.832904778167176,
+    "source_best_objective_so_far_train": -4.717668296832825,
+    "theta": {
+      "velocity_planner.v_max": 14.513937098273384,
+      "velocity_planner.mux_acc": 0.54704852418863,
+      "velocity_planner.mux_dec": 0.36808718238473215,
+      "velocity_planner.muy": 0.44535505941682463,
+      "mpc.cost.Q_y": 22.359554810247587,
+      "mpc.cost.Q_psi": 48.75092151997288,
+      "mpc.cost.R_ddelta": 8.759520006150735
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t066",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 66,
+    "source_candidate_id": 47,
+    "source_train_objective": -4.717668296832825,
+    "source_logged_mean_cost": -7.550573075000001,
+    "source_logged_std_cost": 2.832904778167176,
+    "source_best_objective_so_far_train": -4.717668296832825,
+    "theta": {
+      "velocity_planner.v_max": 14.513937098273384,
+      "velocity_planner.mux_acc": 0.54704852418863,
+      "velocity_planner.mux_dec": 0.36808718238473215,
+      "velocity_planner.muy": 0.44535505941682463,
+      "mpc.cost.Q_y": 22.359554810247587,
+      "mpc.cost.Q_psi": 48.75092151997288,
+      "mpc.cost.R_ddelta": 8.759520006150735
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t072",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 72,
+    "source_candidate_id": 71,
+    "source_train_objective": -8.701350859252544,
+    "source_logged_mean_cost": -10.367020125,
+    "source_logged_std_cost": 1.6656692657474554,
+    "source_best_objective_so_far_train": -8.701350859252544,
+    "theta": {
+      "velocity_planner.v_max": 9.181559029949119,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6305703051644184,
+      "mpc.cost.Q_y": 16.191788385143973,
+      "mpc.cost.Q_psi": 16.23053786474954,
+      "mpc.cost.R_ddelta": 10.856475025109095
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t078",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 78,
+    "source_candidate_id": 71,
+    "source_train_objective": -8.701350859252544,
+    "source_logged_mean_cost": -10.367020125,
+    "source_logged_std_cost": 1.6656692657474554,
+    "source_best_objective_so_far_train": -8.701350859252544,
+    "theta": {
+      "velocity_planner.v_max": 9.181559029949119,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6305703051644184,
+      "mpc.cost.Q_y": 16.191788385143973,
+      "mpc.cost.Q_psi": 16.23053786474954,
+      "mpc.cost.R_ddelta": 10.856475025109095
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t084",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 84,
+    "source_candidate_id": 79,
+    "source_train_objective": -9.165148284152984,
+    "source_logged_mean_cost": -10.827217099999999,
+    "source_logged_std_cost": 1.6620688158470143,
+    "source_best_objective_so_far_train": -9.165148284152984,
+    "theta": {
+      "velocity_planner.v_max": 9.671870711320334,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.5946960606062761,
+      "mpc.cost.Q_y": 34.04480307955054,
+      "mpc.cost.Q_psi": 12.725667436323606,
+      "mpc.cost.R_ddelta": 23.69788077922823
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t090",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 90,
+    "source_candidate_id": 79,
+    "source_train_objective": -9.165148284152984,
+    "source_logged_mean_cost": -10.827217099999999,
+    "source_logged_std_cost": 1.6620688158470143,
+    "source_best_objective_so_far_train": -9.165148284152984,
+    "theta": {
+      "velocity_planner.v_max": 9.671870711320334,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.5946960606062761,
+      "mpc.cost.Q_y": 34.04480307955054,
+      "mpc.cost.Q_psi": 12.725667436323606,
+      "mpc.cost.R_ddelta": 23.69788077922823
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t096",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 96,
+    "source_candidate_id": 79,
+    "source_train_objective": -9.165148284152984,
+    "source_logged_mean_cost": -10.827217099999999,
+    "source_logged_std_cost": 1.6620688158470143,
+    "source_best_objective_so_far_train": -9.165148284152984,
+    "theta": {
+      "velocity_planner.v_max": 9.671870711320334,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.5946960606062761,
+      "mpc.cost.Q_y": 34.04480307955054,
+      "mpc.cost.Q_psi": 12.725667436323606,
+      "mpc.cost.R_ddelta": 23.69788077922823
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t102",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 102,
+    "source_candidate_id": 79,
+    "source_train_objective": -9.165148284152984,
+    "source_logged_mean_cost": -10.827217099999999,
+    "source_logged_std_cost": 1.6620688158470143,
+    "source_best_objective_so_far_train": -9.165148284152984,
+    "theta": {
+      "velocity_planner.v_max": 9.671870711320334,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.5946960606062761,
+      "mpc.cost.Q_y": 34.04480307955054,
+      "mpc.cost.Q_psi": 12.725667436323606,
+      "mpc.cost.R_ddelta": 23.69788077922823
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t108",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 108,
+    "source_candidate_id": 79,
+    "source_train_objective": -9.165148284152984,
+    "source_logged_mean_cost": -10.827217099999999,
+    "source_logged_std_cost": 1.6620688158470143,
+    "source_best_objective_so_far_train": -9.165148284152984,
+    "theta": {
+      "velocity_planner.v_max": 9.671870711320334,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.5946960606062761,
+      "mpc.cost.Q_y": 34.04480307955054,
+      "mpc.cost.Q_psi": 12.725667436323606,
+      "mpc.cost.R_ddelta": 23.69788077922823
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t114",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 114,
+    "source_candidate_id": 109,
+    "source_train_objective": -10.78209306565656,
+    "source_logged_mean_cost": -11.349448375000001,
+    "source_logged_std_cost": 0.5673553093434407,
+    "source_best_objective_so_far_train": -10.78209306565656,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6301302613904214,
+      "mpc.cost.Q_y": 51.167716920855135,
+      "mpc.cost.Q_psi": 20.12324301144414,
+      "mpc.cost.R_ddelta": 11.991582341125222
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t120",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 120,
+    "source_candidate_id": 109,
+    "source_train_objective": -10.78209306565656,
+    "source_logged_mean_cost": -11.349448375000001,
+    "source_logged_std_cost": 0.5673553093434407,
+    "source_best_objective_so_far_train": -10.78209306565656,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6301302613904214,
+      "mpc.cost.Q_y": 51.167716920855135,
+      "mpc.cost.Q_psi": 20.12324301144414,
+      "mpc.cost.R_ddelta": 11.991582341125222
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t126",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 126,
+    "source_candidate_id": 109,
+    "source_train_objective": -10.78209306565656,
+    "source_logged_mean_cost": -11.349448375000001,
+    "source_logged_std_cost": 0.5673553093434407,
+    "source_best_objective_so_far_train": -10.78209306565656,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6301302613904214,
+      "mpc.cost.Q_y": 51.167716920855135,
+      "mpc.cost.Q_psi": 20.12324301144414,
+      "mpc.cost.R_ddelta": 11.991582341125222
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t132",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 132,
+    "source_candidate_id": 109,
+    "source_train_objective": -10.78209306565656,
+    "source_logged_mean_cost": -11.349448375000001,
+    "source_logged_std_cost": 0.5673553093434407,
+    "source_best_objective_so_far_train": -10.78209306565656,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6301302613904214,
+      "mpc.cost.Q_y": 51.167716920855135,
+      "mpc.cost.Q_psi": 20.12324301144414,
+      "mpc.cost.R_ddelta": 11.991582341125222
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t138",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 138,
+    "source_candidate_id": 109,
+    "source_train_objective": -10.78209306565656,
+    "source_logged_mean_cost": -11.349448375000001,
+    "source_logged_std_cost": 0.5673553093434407,
+    "source_best_objective_so_far_train": -10.78209306565656,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6301302613904214,
+      "mpc.cost.Q_y": 51.167716920855135,
+      "mpc.cost.Q_psi": 20.12324301144414,
+      "mpc.cost.R_ddelta": 11.991582341125222
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t144",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 144,
+    "source_candidate_id": 109,
+    "source_train_objective": -10.78209306565656,
+    "source_logged_mean_cost": -11.349448375000001,
+    "source_logged_std_cost": 0.5673553093434407,
+    "source_best_objective_so_far_train": -10.78209306565656,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6301302613904214,
+      "mpc.cost.Q_y": 51.167716920855135,
+      "mpc.cost.Q_psi": 20.12324301144414,
+      "mpc.cost.R_ddelta": 11.991582341125222
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t150",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 150,
+    "source_candidate_id": 109,
+    "source_train_objective": -10.78209306565656,
+    "source_logged_mean_cost": -11.349448375000001,
+    "source_logged_std_cost": 0.5673553093434407,
+    "source_best_objective_so_far_train": -10.78209306565656,
+    "theta": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.3,
+      "velocity_planner.muy": 0.6301302613904214,
+      "mpc.cost.Q_y": 51.167716920855135,
+      "mpc.cost.Q_psi": 20.12324301144414,
+      "mpc.cost.R_ddelta": 11.991582341125222
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t156",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 156,
+    "source_candidate_id": 156,
+    "source_train_objective": -11.364601238214968,
+    "source_logged_mean_cost": -12.913321224999999,
+    "source_logged_std_cost": 1.5487199867850305,
+    "source_best_objective_so_far_train": -11.364601238214968,
+    "theta": {
+      "velocity_planner.v_max": 11.497590561128744,
+      "velocity_planner.mux_acc": 0.3174182138631629,
+      "velocity_planner.mux_dec": 0.951519210037375,
+      "velocity_planner.muy": 0.553971990231269,
+      "mpc.cost.Q_y": 28.672220983505643,
+      "mpc.cost.Q_psi": 49.16499419663041,
+      "mpc.cost.R_ddelta": 12.645766366885981
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t162",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 162,
+    "source_candidate_id": 156,
+    "source_train_objective": -11.364601238214968,
+    "source_logged_mean_cost": -12.913321224999999,
+    "source_logged_std_cost": 1.5487199867850305,
+    "source_best_objective_so_far_train": -11.364601238214968,
+    "theta": {
+      "velocity_planner.v_max": 11.497590561128744,
+      "velocity_planner.mux_acc": 0.3174182138631629,
+      "velocity_planner.mux_dec": 0.951519210037375,
+      "velocity_planner.muy": 0.553971990231269,
+      "mpc.cost.Q_y": 28.672220983505643,
+      "mpc.cost.Q_psi": 49.16499419663041,
+      "mpc.cost.R_ddelta": 12.645766366885981
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t168",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 168,
+    "source_candidate_id": 156,
+    "source_train_objective": -11.364601238214968,
+    "source_logged_mean_cost": -12.913321224999999,
+    "source_logged_std_cost": 1.5487199867850305,
+    "source_best_objective_so_far_train": -11.364601238214968,
+    "theta": {
+      "velocity_planner.v_max": 11.497590561128744,
+      "velocity_planner.mux_acc": 0.3174182138631629,
+      "velocity_planner.mux_dec": 0.951519210037375,
+      "velocity_planner.muy": 0.553971990231269,
+      "mpc.cost.Q_y": 28.672220983505643,
+      "mpc.cost.Q_psi": 49.16499419663041,
+      "mpc.cost.R_ddelta": 12.645766366885981
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t174",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 174,
+    "source_candidate_id": 156,
+    "source_train_objective": -11.364601238214968,
+    "source_logged_mean_cost": -12.913321224999999,
+    "source_logged_std_cost": 1.5487199867850305,
+    "source_best_objective_so_far_train": -11.364601238214968,
+    "theta": {
+      "velocity_planner.v_max": 11.497590561128744,
+      "velocity_planner.mux_acc": 0.3174182138631629,
+      "velocity_planner.mux_dec": 0.951519210037375,
+      "velocity_planner.muy": 0.553971990231269,
+      "mpc.cost.Q_y": 28.672220983505643,
+      "mpc.cost.Q_psi": 49.16499419663041,
+      "mpc.cost.R_ddelta": 12.645766366885981
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t180",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 180,
+    "source_candidate_id": 156,
+    "source_train_objective": -11.364601238214968,
+    "source_logged_mean_cost": -12.913321224999999,
+    "source_logged_std_cost": 1.5487199867850305,
+    "source_best_objective_so_far_train": -11.364601238214968,
+    "theta": {
+      "velocity_planner.v_max": 11.497590561128744,
+      "velocity_planner.mux_acc": 0.3174182138631629,
+      "velocity_planner.mux_dec": 0.951519210037375,
+      "velocity_planner.muy": 0.553971990231269,
+      "mpc.cost.Q_y": 28.672220983505643,
+      "mpc.cost.Q_psi": 49.16499419663041,
+      "mpc.cost.R_ddelta": 12.645766366885981
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t186",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 186,
+    "source_candidate_id": 156,
+    "source_train_objective": -11.364601238214968,
+    "source_logged_mean_cost": -12.913321224999999,
+    "source_logged_std_cost": 1.5487199867850305,
+    "source_best_objective_so_far_train": -11.364601238214968,
+    "theta": {
+      "velocity_planner.v_max": 11.497590561128744,
+      "velocity_planner.mux_acc": 0.3174182138631629,
+      "velocity_planner.mux_dec": 0.951519210037375,
+      "velocity_planner.muy": 0.553971990231269,
+      "mpc.cost.Q_y": 28.672220983505643,
+      "mpc.cost.Q_psi": 49.16499419663041,
+      "mpc.cost.R_ddelta": 12.645766366885981
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t192",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 192,
+    "source_candidate_id": 156,
+    "source_train_objective": -11.364601238214968,
+    "source_logged_mean_cost": -12.913321224999999,
+    "source_logged_std_cost": 1.5487199867850305,
+    "source_best_objective_so_far_train": -11.364601238214968,
+    "theta": {
+      "velocity_planner.v_max": 11.497590561128744,
+      "velocity_planner.mux_acc": 0.3174182138631629,
+      "velocity_planner.mux_dec": 0.951519210037375,
+      "velocity_planner.muy": 0.553971990231269,
+      "mpc.cost.Q_y": 28.672220983505643,
+      "mpc.cost.Q_psi": 49.16499419663041,
+      "mpc.cost.R_ddelta": 12.645766366885981
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t198",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 198,
+    "source_candidate_id": 197,
+    "source_train_objective": -12.29807515215397,
+    "source_logged_mean_cost": -13.0092091875,
+    "source_logged_std_cost": 0.7111340353460288,
+    "source_best_objective_so_far_train": -12.29807515215397,
+    "theta": {
+      "velocity_planner.v_max": 9.023518343712949,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.9922315477732977,
+      "velocity_planner.muy": 0.6461070678930567,
+      "mpc.cost.Q_y": 42.91472392023661,
+      "mpc.cost.Q_psi": 100.0,
+      "mpc.cost.R_ddelta": 6.6602557209944795
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t204",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 204,
+    "source_candidate_id": 197,
+    "source_train_objective": -12.29807515215397,
+    "source_logged_mean_cost": -13.0092091875,
+    "source_logged_std_cost": 0.7111340353460288,
+    "source_best_objective_so_far_train": -12.29807515215397,
+    "theta": {
+      "velocity_planner.v_max": 9.023518343712949,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.9922315477732977,
+      "velocity_planner.muy": 0.6461070678930567,
+      "mpc.cost.Q_y": 42.91472392023661,
+      "mpc.cost.Q_psi": 100.0,
+      "mpc.cost.R_ddelta": 6.6602557209944795
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t210",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 210,
+    "source_candidate_id": 197,
+    "source_train_objective": -12.29807515215397,
+    "source_logged_mean_cost": -13.0092091875,
+    "source_logged_std_cost": 0.7111340353460288,
+    "source_best_objective_so_far_train": -12.29807515215397,
+    "theta": {
+      "velocity_planner.v_max": 9.023518343712949,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.9922315477732977,
+      "velocity_planner.muy": 0.6461070678930567,
+      "mpc.cost.Q_y": 42.91472392023661,
+      "mpc.cost.Q_psi": 100.0,
+      "mpc.cost.R_ddelta": 6.6602557209944795
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t216",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 216,
+    "source_candidate_id": 197,
+    "source_train_objective": -12.29807515215397,
+    "source_logged_mean_cost": -13.0092091875,
+    "source_logged_std_cost": 0.7111340353460288,
+    "source_best_objective_so_far_train": -12.29807515215397,
+    "theta": {
+      "velocity_planner.v_max": 9.023518343712949,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.9922315477732977,
+      "velocity_planner.muy": 0.6461070678930567,
+      "mpc.cost.Q_y": 42.91472392023661,
+      "mpc.cost.Q_psi": 100.0,
+      "mpc.cost.R_ddelta": 6.6602557209944795
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t222",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 222,
+    "source_candidate_id": 197,
+    "source_train_objective": -12.29807515215397,
+    "source_logged_mean_cost": -13.0092091875,
+    "source_logged_std_cost": 0.7111340353460288,
+    "source_best_objective_so_far_train": -12.29807515215397,
+    "theta": {
+      "velocity_planner.v_max": 9.023518343712949,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.9922315477732977,
+      "velocity_planner.muy": 0.6461070678930567,
+      "mpc.cost.Q_y": 42.91472392023661,
+      "mpc.cost.Q_psi": 100.0,
+      "mpc.cost.R_ddelta": 6.6602557209944795
+    }
+  },
+  {
+    "selection_label": "global_best_so_far_t224",
+    "selection_family": "global_best_so_far",
+    "source_phase": "unstaged_joint_random",
+    "global_checkpoint": 224,
+    "source_candidate_id": 197,
+    "source_train_objective": -12.29807515215397,
+    "source_logged_mean_cost": -13.0092091875,
+    "source_logged_std_cost": 0.7111340353460288,
+    "source_best_objective_so_far_train": -12.29807515215397,
+    "theta": {
+      "velocity_planner.v_max": 9.023518343712949,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.9922315477732977,
+      "velocity_planner.muy": 0.6461070678930567,
+      "mpc.cost.Q_y": 42.91472392023661,
+      "mpc.cost.Q_psi": 100.0,
+      "mpc.cost.R_ddelta": 6.6602557209944795
+    }
+  }
+]

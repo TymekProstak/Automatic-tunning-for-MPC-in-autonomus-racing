@@ -1,0 +1,386 @@
+{
+  "config": {
+    "profile_name": "night_4track",
+    "catkin_ws": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_CMA_ES",
+    "ws_src": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_CMA_ES/src",
+    "acados_lib": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_CMA_ES/src/dv_control/External/acados/install/lib",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "episodes_per_trial": 4,
+    "unstaged_trials": 208,
+    "unstaged_lambda": 8,
+    "unstaged_maxiter": 26,
+    "total_trials": 208,
+    "total_episodes": 832,
+    "pure_sim_hours": 13.866666666666667,
+    "ucb_weight": 1.0,
+    "safe_planner": {
+      "velocity_planner.v_max": 13.5,
+      "velocity_planner.mux_acc": 0.7,
+      "velocity_planner.mux_dec": 0.6,
+      "velocity_planner.muy": 0.75
+    },
+    "planner_bounds": {
+      "velocity_planner.v_max": [
+        8.0,
+        18.0
+      ],
+      "velocity_planner.mux_acc": [
+        0.3,
+        1.7
+      ],
+      "velocity_planner.mux_dec": [
+        0.3,
+        1.7
+      ],
+      "velocity_planner.muy": [
+        0.3,
+        1.7
+      ]
+    },
+    "cost_bounds": {
+      "mpc.cost.Q_y": [
+        1,
+        100.0
+      ],
+      "mpc.cost.Q_psi": [
+        1,
+        100.0
+      ],
+      "mpc.cost.R_ddelta": [
+        1,
+        100.0
+      ],
+      "mpc.cost.R_tv": [
+        1e-08,
+        1e-05
+      ]
+    },
+    "stage1_cost_std_frac": 0.3,
+    "unstaged_planner_std_frac_vmax": 0.35,
+    "unstaged_planner_std_frac_mu": 0.32,
+    "unstaged_critical_crash_multiplier": 1.0,
+    "dist_log_path": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_CMA_ES/src/evolution_optimization/cma_distribution_log_tv_unstaged_night_4track.jsonl",
+    "run_log_path": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_CMA_ES/src/evolution_optimization/tuning_run_tv_unstaged_night_4track.jsonl",
+    "equivalent_staged_budget": {
+      "phase1_trials": 48,
+      "phase2_trials": 64,
+      "phase3_trials": 96
+    }
+  },
+  "stage_distributions": {
+    "unstaged_initial_distribution": {
+      "phase": "unstaged_joint_cma",
+      "generation": 0,
+      "lambda": 0,
+      "sigma_internal": 1.0,
+      "distribution_mean_search": {
+        "mpc.cost.Q_y": 2.302585092994046,
+        "mpc.cost.Q_psi": 2.302585092994046,
+        "mpc.cost.R_ddelta": 2.302585092994046,
+        "mpc.cost.R_tv": -14.966803104461297,
+        "velocity_planner.v_max": 13.5,
+        "velocity_planner.mux_acc": 0.7,
+        "velocity_planner.mux_dec": 0.6,
+        "velocity_planner.muy": 0.75
+      },
+      "distribution_center_theta": {
+        "mpc.cost.Q_y": 10.000000000000002,
+        "mpc.cost.Q_psi": 10.000000000000002,
+        "mpc.cost.R_ddelta": 10.000000000000002,
+        "mpc.cost.R_tv": 3.162277660168379e-07,
+        "velocity_planner.v_max": 13.5,
+        "velocity_planner.mux_acc": 0.7,
+        "velocity_planner.mux_dec": 0.6,
+        "velocity_planner.muy": 0.75
+      },
+      "distribution_center_theta_full": {
+        "mpc.cost.Q_y": 10.000000000000002,
+        "mpc.cost.Q_psi": 10.000000000000002,
+        "mpc.cost.R_ddelta": 10.000000000000002,
+        "mpc.cost.R_tv": 3.162277660168379e-07,
+        "velocity_planner.v_max": 13.5,
+        "velocity_planner.mux_acc": 0.7,
+        "velocity_planner.mux_dec": 0.6,
+        "velocity_planner.muy": 0.75
+      },
+      "distribution_cov_diag_search": {
+        "mpc.cost.Q_y": 1.9086833197722235,
+        "mpc.cost.Q_psi": 1.9086833197722235,
+        "mpc.cost.R_ddelta": 1.9086833197722235,
+        "mpc.cost.R_tv": 4.294537469487501,
+        "velocity_planner.v_max": 12.25,
+        "velocity_planner.mux_acc": 0.20070399999999997,
+        "velocity_planner.mux_dec": 0.20070399999999997,
+        "velocity_planner.muy": 0.20070399999999997
+      },
+      "distribution_cov_search_matrix": [
+        [
+          1.9086833197722235,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.9086833197722235,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.9086833197722235,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          4.294537469487501,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          12.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.20070399999999997,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.20070399999999997,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.20070399999999997
+        ]
+      ],
+      "timestamp_unix": 1773876258.892301
+    },
+    "unstaged_final_distribution": {
+      "phase": "unstaged_joint_cma",
+      "generation": 26,
+      "lambda": 8,
+      "sigma_internal": 0.6418007807393077,
+      "distribution_mean_search": {
+        "mpc.cost.Q_y": -0.12765797758674768,
+        "mpc.cost.Q_psi": 2.6482791080063257,
+        "mpc.cost.R_ddelta": -0.24948325629897372,
+        "mpc.cost.R_tv": -8.207682330484932,
+        "velocity_planner.v_max": 14.955172347597482,
+        "velocity_planner.mux_acc": 0.7579320374794687,
+        "velocity_planner.mux_dec": 0.25554994550902704,
+        "velocity_planner.muy": 1.351861602062947
+      },
+      "distribution_center_theta": {
+        "mpc.cost.Q_y": 0.8801543601888846,
+        "mpc.cost.Q_psi": 14.129702019950756,
+        "mpc.cost.R_ddelta": 0.7792033274675945,
+        "mpc.cost.R_tv": 0.00027255167454390934,
+        "velocity_planner.v_max": 14.955172347597482,
+        "velocity_planner.mux_acc": 0.7579320374794687,
+        "velocity_planner.mux_dec": 0.25554994550902704,
+        "velocity_planner.muy": 1.351861602062947
+      },
+      "distribution_center_theta_full": {
+        "mpc.cost.Q_y": 0.8801543601888846,
+        "mpc.cost.Q_psi": 14.129702019950756,
+        "mpc.cost.R_ddelta": 0.7792033274675945,
+        "mpc.cost.R_tv": 0.00027255167454390934,
+        "velocity_planner.v_max": 14.955172347597482,
+        "velocity_planner.mux_acc": 0.7579320374794687,
+        "velocity_planner.mux_dec": 0.25554994550902704,
+        "velocity_planner.muy": 1.351861602062947
+      },
+      "distribution_cov_diag_search": {
+        "mpc.cost.Q_y": 0.9279317852118237,
+        "mpc.cost.Q_psi": 0.7418134628515282,
+        "mpc.cost.R_ddelta": 0.6826661149336557,
+        "mpc.cost.R_tv": 0.9097133942720332,
+        "velocity_planner.v_max": 2.5109272064619885,
+        "velocity_planner.mux_acc": 0.11844487652014966,
+        "velocity_planner.mux_dec": 0.08813014533717514,
+        "velocity_planner.muy": 0.03942324230786746
+      },
+      "distribution_std_theta_approx": {
+        "mpc.cost.Q_y": 1.7310082490069107,
+        "mpc.cost.Q_psi": 21.47141835291533,
+        "mpc.cost.R_ddelta": 1.0847106038682057,
+        "mpc.cost.R_tv": 0.0005231793261610217,
+        "velocity_planner.v_max": 1.58459054852097,
+        "velocity_planner.mux_acc": 0.3441582143726191,
+        "velocity_planner.mux_dec": 0.29686721836062524,
+        "velocity_planner.muy": 0.19855287030881083
+      },
+      "distribution_cov_search_matrix": [
+        [
+          0.9279317852118237,
+          -0.11055458688982316,
+          0.07751765932019168,
+          -0.3245077846815153,
+          0.21484383194878154,
+          -0.06607464055281562,
+          -0.05129315968295454,
+          0.024866588675836826
+        ],
+        [
+          -0.11055458688982316,
+          0.7418134628515282,
+          -0.114747915394259,
+          -0.11439567914123186,
+          -0.1425841437445609,
+          0.0777145917565985,
+          0.05838722843619577,
+          -0.03451402909456984
+        ],
+        [
+          0.07751765932019168,
+          -0.114747915394259,
+          0.6826661149336557,
+          0.022452056470816655,
+          -0.15456943432778247,
+          -0.05271984453034543,
+          -0.0789115969593712,
+          0.02932589778123326
+        ],
+        [
+          -0.3245077846815153,
+          -0.11439567914123186,
+          0.022452056470816655,
+          0.9097133942720332,
+          -0.3532320568281117,
+          -0.008279178515486539,
+          0.023164083635087082,
+          0.025625854627768178
+        ],
+        [
+          0.21484383194878154,
+          -0.1425841437445609,
+          -0.15456943432778247,
+          -0.3532320568281117,
+          2.5109272064619885,
+          0.056423307521975635,
+          -0.05771190391713091,
+          -0.0664106180816748
+        ],
+        [
+          -0.06607464055281562,
+          0.0777145917565985,
+          -0.05271984453034543,
+          -0.008279178515486539,
+          0.056423307521975635,
+          0.11844487652014966,
+          0.03955026470661356,
+          -0.01797939900577558
+        ],
+        [
+          -0.05129315968295454,
+          0.05838722843619577,
+          -0.0789115969593712,
+          0.023164083635087082,
+          -0.05771190391713091,
+          0.03955026470661356,
+          0.08813014533717514,
+          -0.017522731420519053
+        ],
+        [
+          0.024866588675836826,
+          -0.03451402909456984,
+          0.02932589778123326,
+          0.025625854627768178,
+          -0.0664106180816748,
+          -0.01797939900577558,
+          -0.017522731420519053,
+          0.03942324230786746
+        ]
+      ],
+      "timestamp_unix": 1773923414.2339637,
+      "generation_best_theta": {
+        "mpc.cost.Q_y": 1.2945228387714638,
+        "mpc.cost.Q_psi": 13.071568994514754,
+        "mpc.cost.R_ddelta": 1.0391400009496743,
+        "mpc.cost.R_tv": 9.999999999999997e-06,
+        "velocity_planner.v_max": 16.04482715986398,
+        "velocity_planner.mux_acc": 0.866655711239079,
+        "velocity_planner.mux_dec": 0.3,
+        "velocity_planner.muy": 1.3676769148825234
+      },
+      "generation_best_objective": -23.22476034253105,
+      "global_best_objective_inside_phase": -23.81554870143642
+    }
+  },
+  "results": {
+    "unstaged_joint_cma": {
+      "best_objective": -23.81554870143642,
+      "best_theta": {
+        "mpc.cost.Q_y": 1.0,
+        "mpc.cost.Q_psi": 7.6992484128592515,
+        "mpc.cost.R_ddelta": 1.3330562159227373,
+        "mpc.cost.R_tv": 9.999999999999997e-06,
+        "velocity_planner.v_max": 13.81830470760751,
+        "velocity_planner.mux_acc": 0.8805417089088511,
+        "velocity_planner.mux_dec": 0.4107536182259929,
+        "velocity_planner.muy": 1.5594813040666282
+      }
+    },
+    "global_best": {
+      "best_objective": -23.81554870143642,
+      "best_theta": {
+        "mpc.cost.Q_y": 1.0,
+        "mpc.cost.Q_psi": 7.6992484128592515,
+        "mpc.cost.R_ddelta": 1.3330562159227373,
+        "mpc.cost.R_tv": 9.999999999999997e-06,
+        "velocity_planner.v_max": 13.81830470760751,
+        "velocity_planner.mux_acc": 0.8805417089088511,
+        "velocity_planner.mux_dec": 0.4107536182259929,
+        "velocity_planner.muy": 1.5594813040666282
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "stanley": {
+    "k": 1.85,
+    "epsilon": 0.5,
+    "lf": 0.73
+  },
+  "general": {
+    "max_delta": 0.4,
+    "min_delta": -0.4,
+    "odom_frequency": 30.0,
+    "interpoleted_num_max_points": 50000,
+    "distance_between_interpoleted_points": 0.1,
+    "v_target": 3.0,
+    "using_pure_pursuit": 0.0,
+    "using_stanley": 1.0,
+    "min_path_length_for_geo": 2.0
+  },
+  "velocity_planner": {
+    "mux_acc": 0.6672285153361384,
+    "mux_dec": 0.6685845359479279,
+    "v_min": 2.0,
+    "v_max": 15.261371872076376,
+    "muy": 1.0687297925422337,
+    "safety_factor": 0.95,
+    "max_jerk": 100.0,
+    "spatial_step": 0.1,
+    "number_of_jerk_merging_iterations": 3,
+    "smoothing_factor": 0.2,
+    "Cl": 1.88,
+    "m": 193.0
+  },
+  "mpc": {
+    "bounds": {
+      "max_delta": 0.4,
+      "min_delta": -0.4,
+      "max_ddelta": 0.6,
+      "min_ddelta": -0.6,
+      "max_tv": 1000.0,
+      "min_tv": -1000.0
+    },
+    "constraints": {
+      "track_width": 3.0,
+      "safety_factor": 0.95
+    },
+    "model": {
+      "m": 193.0,
+      "Iz": 110.0,
+      "lf": 0.738,
+      "lr": 0.792,
+      "Cf": 26126.0,
+      "Cr": 26126.0,
+      "whell_radius": 0.195,
+      "max_motor_torque": 250.3,
+      "Cd": 0.814,
+      "Cr0": 25.0,
+      "Cl": 1.88,
+      "Cm": 2391.0,
+      "C": 1.5,
+      "D": 1.737,
+      "B": 10.23,
+      "mux": 1.0,
+      "muy": 1.0,
+      "length": 2.8835,
+      "width": 1.445,
+      "steer_natural_freq": 50.0,
+      "steer_damping": 1.0,
+      "max_steering_angle_rate": 0.8
+    },
+    "cost": {
+      "Q_y": 11.804072658346188,
+      "Q_psi": 13.839772493145652,
+      "R_ddelta": 4.291290077690276,
+      "Q_r": 0.0,
+      "Q_delta": 0.0,
+      "R_tv": 2.724770528817074e-06,
+      "R_dthrottle": 60.0,
+      "Q_s_dot": -10.0,
+      "Q_beta": 0.5
+    },
+    "solver": {
+      "max_iter": 150,
+      "eps": 0.001,
+      "mpc_N": 60,
+      "mpc_dt": 0.03333333333333333
+    }
+  }
+}

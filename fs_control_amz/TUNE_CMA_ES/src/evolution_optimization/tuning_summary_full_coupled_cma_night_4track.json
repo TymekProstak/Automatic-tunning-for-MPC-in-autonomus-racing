@@ -1,0 +1,806 @@
+{
+  "config": {
+    "mode": "night_4track",
+    "catkin_ws": "/home/tymek/Desktop/fs_control_amz/TUNE_CMA_ES",
+    "ws_src": "/home/tymek/Desktop/fs_control_amz/TUNE_CMA_ES/src",
+    "acados_lib": "/home/tymek/Desktop/fs_control_amz/TUNE_CMA_ES/src/dv_control/External/acados/install/lib",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "episodes_per_trial": 4,
+    "phase1_lambda": 8,
+    "phase1_maxiter": 8,
+    "phase1_trials": 64,
+    "phase2_lambda": 8,
+    "phase2_maxiter": 8,
+    "phase2_trials": 64,
+    "phase3_lambda": 8,
+    "phase3_maxiter": 12,
+    "phase3_trials": 96,
+    "total_trials": 224,
+    "total_episodes": 896,
+    "pure_sim_hours": 14.933333333333334,
+    "safe_planner": {
+      "mpc.bounds.max_vx": 13.5,
+      "mpc.model.mux": 0.6,
+      "mpc.model.muy": 0.7,
+      "mpc.cost.q_sdot": 0.1
+    },
+    "planner_bounds": {
+      "mpc.bounds.max_vx": [
+        8.0,
+        18.0
+      ],
+      "mpc.model.mux": [
+        0.4,
+        1.7
+      ],
+      "mpc.model.muy": [
+        0.4,
+        1.7
+      ],
+      "mpc.cost.q_sdot": [
+        0.1,
+        1.0
+      ]
+    },
+    "cost_bounds": {
+      "mpc.cost.q_ey": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.Q_epsi": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_dT": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_u_ddelta_cmd": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_Mtv": [
+        1e-08,
+        1e-05
+      ],
+      "mpc.cost.Q_beta": [
+        0.1,
+        10.0
+      ]
+    },
+    "phase1_critical_crash_multiplier": 1.0,
+    "phase2_critical_crash_multiplier": 1.0,
+    "phase3_critical_crash_multiplier": 1.0,
+    "stage1_cost_std_frac": 0.3,
+    "stage2_planner_std_frac_vmax": 0.35,
+    "stage2_planner_std_frac_mu": 0.32,
+    "stage2_planner_std_frac_qsdot": 0.3,
+    "stage3_planner_safe_blend": 0.2,
+    "stage3_cost_cov_alpha": 0.6,
+    "stage3_cost_cov_beta": 1.5,
+    "stage3_cost_std_min_frac": 0.05,
+    "stage3_cost_std_max_frac": 0.1,
+    "stage3_planner_cov_alpha": 0.6,
+    "stage3_planner_cov_beta": 1.5,
+    "stage3_planner_std_min_frac": 0.1,
+    "stage3_planner_std_max_frac": 0.35,
+    "ucb_weight": 1.0,
+    "crash_penalty": 150.0,
+    "crash_time_penalty": 0.05,
+    "dist_log_path": "/home/tymek/Desktop/fs_control_amz/TUNE_CMA_ES/src/evolution_optimization/cma_distribution_log_full_coupled_night_4track.jsonl",
+    "run_log_path": "/home/tymek/Desktop/fs_control_amz/TUNE_CMA_ES/src/evolution_optimization/tuning_run_full_coupled_cma_night_4track.jsonl",
+    "slack_tuning": false,
+    "q_sdot_is_linear": true
+  },
+  "stage_distributions": {
+    "phase1_final_distribution": {
+      "phase": "phase1_cost_only_cma",
+      "generation": 8,
+      "lambda": 8,
+      "sigma_internal": 0.5291918067555309,
+      "distribution_mean_search": {
+        "mpc.cost.q_ey": 0.8210251419234316,
+        "mpc.cost.Q_epsi": 3.677288420701906,
+        "mpc.cost.R_dT": 3.553301697520488,
+        "mpc.cost.R_u_ddelta_cmd": 2.2928471385271028,
+        "mpc.cost.R_Mtv": -16.463819648487675,
+        "mpc.cost.Q_beta": 0.9758430775021134
+      },
+      "distribution_center_theta": {
+        "mpc.cost.q_ey": 2.272828615563054,
+        "mpc.cost.Q_epsi": 39.53903535278339,
+        "mpc.cost.R_dT": 34.92845049422133,
+        "mpc.cost.R_u_ddelta_cmd": 9.903093058808777,
+        "mpc.cost.R_Mtv": 7.077077892516526e-08,
+        "mpc.cost.Q_beta": 2.6534032928752485
+      },
+      "distribution_center_theta_full": {
+        "mpc.bounds.max_vx": 13.5,
+        "mpc.model.mux": 0.6,
+        "mpc.model.muy": 0.7,
+        "mpc.cost.q_sdot": 0.1,
+        "mpc.cost.q_ey": 2.272828615563054,
+        "mpc.cost.Q_epsi": 39.53903535278339,
+        "mpc.cost.R_dT": 34.92845049422133,
+        "mpc.cost.R_u_ddelta_cmd": 9.903093058808777,
+        "mpc.cost.R_Mtv": 7.077077892516526e-08,
+        "mpc.cost.Q_beta": 2.6534032928752485
+      },
+      "distribution_cov_diag_search": {
+        "mpc.cost.q_ey": 0.37535854211531716,
+        "mpc.cost.Q_epsi": 0.5088690630664636,
+        "mpc.cost.R_dT": 0.3823983901932621,
+        "mpc.cost.R_u_ddelta_cmd": 0.40598880015266775,
+        "mpc.cost.R_Mtv": 1.2746031076412545,
+        "mpc.cost.Q_beta": 0.47491336216544794
+      },
+      "distribution_std_theta_approx": {
+        "mpc.cost.q_ey": 1.8506540246923262,
+        "mpc.cost.Q_epsi": 41.53519329414309,
+        "mpc.cost.R_dT": 28.861169056509645,
+        "mpc.cost.R_u_ddelta_cmd": 8.585314053796207,
+        "mpc.cost.R_Mtv": 2.1488764076791454e-07,
+        "mpc.cost.Q_beta": 2.623230731807443
+      },
+      "distribution_cov_search_matrix": [
+        [
+          0.37535854211531716,
+          0.05781101060874885,
+          -0.05637471994390892,
+          0.08107857891537637,
+          0.041418741156316566,
+          0.0791347569225714
+        ],
+        [
+          0.05781101060874885,
+          0.5088690630664636,
+          0.03541023696689955,
+          -0.010402227393568424,
+          0.17198547199359962,
+          -0.041016543966406444
+        ],
+        [
+          -0.05637471994390892,
+          0.03541023696689955,
+          0.3823983901932621,
+          0.0952643686672542,
+          0.026635136819546625,
+          -0.02895435935363947
+        ],
+        [
+          0.08107857891537637,
+          -0.010402227393568424,
+          0.0952643686672542,
+          0.40598880015266775,
+          0.23053588074891415,
+          -0.06039156601524502
+        ],
+        [
+          0.041418741156316566,
+          0.17198547199359962,
+          0.026635136819546625,
+          0.23053588074891415,
+          1.2746031076412545,
+          0.020784762912521088
+        ],
+        [
+          0.0791347569225714,
+          -0.041016543966406444,
+          -0.02895435935363947,
+          -0.06039156601524502,
+          0.020784762912521088,
+          0.47491336216544794
+        ]
+      ],
+      "timestamp_unix": 1774033910.91115,
+      "generation_best_theta": {
+        "mpc.bounds.max_vx": 13.5,
+        "mpc.model.mux": 0.6,
+        "mpc.model.muy": 0.7,
+        "mpc.cost.q_sdot": 0.1,
+        "mpc.cost.q_ey": 4.389111943131162,
+        "mpc.cost.Q_epsi": 28.07294797013516,
+        "mpc.cost.R_dT": 34.333340085993264,
+        "mpc.cost.R_u_ddelta_cmd": 24.312343170005388,
+        "mpc.cost.R_Mtv": 7.750456124913551e-08,
+        "mpc.cost.Q_beta": 2.825659713354902
+      },
+      "generation_best_cost": -15.41659367626831,
+      "global_best_cost_inside_phase": -16.502437971563115
+    },
+    "stage2_initial_distribution": {
+      "phase": "phase2_planner_qsdot_cma",
+      "generation": 0,
+      "lambda": 0,
+      "sigma_internal": 1.0,
+      "distribution_mean_search": {
+        "mpc.bounds.max_vx": 13.5,
+        "mpc.model.mux": 0.6,
+        "mpc.model.muy": 0.7,
+        "mpc.cost.q_sdot": 0.1
+      },
+      "distribution_center_theta": {
+        "mpc.bounds.max_vx": 13.5,
+        "mpc.model.mux": 0.6,
+        "mpc.model.muy": 0.7,
+        "mpc.cost.q_sdot": 0.1
+      },
+      "distribution_center_theta_full": {
+        "mpc.cost.q_ey": 1.6386525541025185,
+        "mpc.cost.Q_epsi": 24.908150527062144,
+        "mpc.cost.R_dT": 16.655583047627395,
+        "mpc.cost.R_u_ddelta_cmd": 6.576107857766092,
+        "mpc.cost.R_Mtv": 5.058118568329254e-08,
+        "mpc.cost.Q_beta": 0.8269191158267248,
+        "mpc.bounds.max_vx": 13.5,
+        "mpc.model.mux": 0.6,
+        "mpc.model.muy": 0.7,
+        "mpc.cost.q_sdot": 0.1
+      },
+      "distribution_cov_diag_search": {
+        "mpc.bounds.max_vx": 12.25,
+        "mpc.model.mux": 0.17305599999999993,
+        "mpc.model.muy": 0.17305599999999993,
+        "mpc.cost.q_sdot": 0.0729
+      },
+      "distribution_cov_search_matrix": [
+        [
+          12.25,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.17305599999999993,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.17305599999999993,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0729
+        ]
+      ],
+      "timestamp_unix": 1774033910.9114258
+    },
+    "phase2_final_distribution": {
+      "phase": "phase2_planner_qsdot_cma",
+      "generation": 8,
+      "lambda": 8,
+      "sigma_internal": 0.8138111833413837,
+      "distribution_mean_search": {
+        "mpc.bounds.max_vx": 14.875928962358433,
+        "mpc.model.mux": 1.2253376082962983,
+        "mpc.model.muy": 1.2369534929209933,
+        "mpc.cost.q_sdot": 0.5495292677045313
+      },
+      "distribution_center_theta": {
+        "mpc.bounds.max_vx": 14.875928962358433,
+        "mpc.model.mux": 1.2253376082962983,
+        "mpc.model.muy": 1.2369534929209933,
+        "mpc.cost.q_sdot": 0.5495292677045313
+      },
+      "distribution_center_theta_full": {
+        "mpc.cost.q_ey": 1.6386525541025185,
+        "mpc.cost.Q_epsi": 24.908150527062144,
+        "mpc.cost.R_dT": 16.655583047627395,
+        "mpc.cost.R_u_ddelta_cmd": 6.576107857766092,
+        "mpc.cost.R_Mtv": 5.058118568329254e-08,
+        "mpc.cost.Q_beta": 0.8269191158267248,
+        "mpc.bounds.max_vx": 14.875928962358433,
+        "mpc.model.mux": 1.2253376082962983,
+        "mpc.model.muy": 1.2369534929209933,
+        "mpc.cost.q_sdot": 0.5495292677045313
+      },
+      "distribution_cov_diag_search": {
+        "mpc.bounds.max_vx": 6.260773357155379,
+        "mpc.model.mux": 0.0893916404631471,
+        "mpc.model.muy": 0.06700623677417093,
+        "mpc.cost.q_sdot": 0.044454486199872974
+      },
+      "distribution_std_theta_approx": {
+        "mpc.bounds.max_vx": 2.5021537437086834,
+        "mpc.model.mux": 0.29898434819091635,
+        "mpc.model.muy": 0.2588556292109,
+        "mpc.cost.q_sdot": 0.21084232544693907
+      },
+      "distribution_cov_search_matrix": [
+        [
+          6.260773357155379,
+          0.20202901591990852,
+          -0.278145217454125,
+          -0.09841022136209225
+        ],
+        [
+          0.20202901591990852,
+          0.0893916404631471,
+          0.013451969430315064,
+          0.00698366615861615
+        ],
+        [
+          -0.278145217454125,
+          0.013451969430315064,
+          0.06700623677417093,
+          0.009782243526483752
+        ],
+        [
+          -0.09841022136209225,
+          0.00698366615861615,
+          0.009782243526483752,
+          0.044454486199872974
+        ]
+      ],
+      "timestamp_unix": 1774047277.0867894,
+      "generation_best_theta": {
+        "mpc.cost.q_ey": 1.6386525541025185,
+        "mpc.cost.Q_epsi": 24.908150527062144,
+        "mpc.cost.R_dT": 16.655583047627395,
+        "mpc.cost.R_u_ddelta_cmd": 6.576107857766092,
+        "mpc.cost.R_Mtv": 5.058118568329254e-08,
+        "mpc.cost.Q_beta": 0.8269191158267248,
+        "mpc.bounds.max_vx": 13.992988677564888,
+        "mpc.model.mux": 1.19411482548922,
+        "mpc.model.muy": 1.295920466533433,
+        "mpc.cost.q_sdot": 0.4604313798145756
+      },
+      "generation_best_cost": -24.22804097000793,
+      "global_best_cost_inside_phase": -24.88854097737466
+    },
+    "stage3_initial_distribution": {
+      "phase": "phase3_joint_cma",
+      "generation": 0,
+      "lambda": 0,
+      "sigma_internal": 1.0,
+      "distribution_mean_search": {
+        "mpc.cost.q_ey": 0.4938742907747437,
+        "mpc.cost.Q_epsi": 3.215195080313855,
+        "mpc.cost.R_dT": 2.8127454783956973,
+        "mpc.cost.R_u_ddelta_cmd": 1.8834430593477922,
+        "mpc.cost.R_Mtv": -16.799686154237698,
+        "mpc.cost.Q_beta": -0.19004839306236823,
+        "mpc.bounds.max_vx": 16.03412258224276,
+        "mpc.model.mux": 0.8666602760891026,
+        "mpc.model.muy": 1.0501789525716092,
+        "mpc.cost.q_sdot": 0.3809554065760731
+      },
+      "distribution_center_theta": {
+        "mpc.cost.q_ey": 1.6386525541025185,
+        "mpc.cost.Q_epsi": 24.908150527062144,
+        "mpc.cost.R_dT": 16.655583047627395,
+        "mpc.cost.R_u_ddelta_cmd": 6.576107857766092,
+        "mpc.cost.R_Mtv": 5.058118568329254e-08,
+        "mpc.cost.Q_beta": 0.8269191158267248,
+        "mpc.bounds.max_vx": 16.03412258224276,
+        "mpc.model.mux": 0.8666602760891026,
+        "mpc.model.muy": 1.0501789525716092,
+        "mpc.cost.q_sdot": 0.3809554065760731
+      },
+      "distribution_center_theta_full": {
+        "mpc.cost.q_ey": 1.6386525541025185,
+        "mpc.cost.Q_epsi": 24.908150527062144,
+        "mpc.cost.R_dT": 16.655583047627395,
+        "mpc.cost.R_u_ddelta_cmd": 6.576107857766092,
+        "mpc.cost.R_Mtv": 5.058118568329254e-08,
+        "mpc.cost.Q_beta": 0.8269191158267248,
+        "mpc.bounds.max_vx": 16.03412258224276,
+        "mpc.model.mux": 0.8666602760891026,
+        "mpc.model.muy": 1.0501789525716092,
+        "mpc.cost.q_sdot": 0.3809554065760731
+      },
+      "distribution_cov_diag_search": {
+        "mpc.cost.q_ey": 0.21207592441913614,
+        "mpc.cost.Q_epsi": 0.21207592441913561,
+        "mpc.cost.R_dT": 0.21207592441913636,
+        "mpc.cost.R_u_ddelta_cmd": 0.21207592441913614,
+        "mpc.cost.R_Mtv": 0.477170829943057,
+        "mpc.cost.Q_beta": 0.21207592441913645,
+        "mpc.bounds.max_vx": 9.391160035733066,
+        "mpc.model.mux": 0.13408746069472047,
+        "mpc.model.muy": 0.10050935516125639,
+        "mpc.cost.q_sdot": 0.06668172929980941
+      },
+      "distribution_cov_search_matrix": [
+        [
+          0.21207592441913614,
+          0.01683166211870779,
+          -0.018934151032461096,
+          0.026428259886838917,
+          0.011429313228853105,
+          0.023849514654673946,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.01683166211870779,
+          0.21207592441913561,
+          0.010214342124799321,
+          -0.0029121176166039195,
+          0.040760089598709484,
+          -0.010616746910068545,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.018934151032461096,
+          0.010214342124799321,
+          0.21207592441913636,
+          0.030765080697447805,
+          0.007281876281125671,
+          -0.008645524723031065,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.026428259886838917,
+          -0.0029121176166039195,
+          0.030765080697447805,
+          0.21207592441913614,
+          0.061168508918369766,
+          -0.0175006705589845,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.011429313228853105,
+          0.040760089598709484,
+          0.007281876281125671,
+          0.061168508918369766,
+          0.477170829943057,
+          0.005098991313215772,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.023849514654673946,
+          -0.010616746910068545,
+          -0.008645524723031065,
+          -0.0175006705589845,
+          0.005098991313215772,
+          0.21207592441913645,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          9.391160035733066,
+          0.18182611432791732,
+          -0.2503306957087122,
+          -0.0885691992258829
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.18182611432791732,
+          0.13408746069472047,
+          0.012106772487283576,
+          0.0062852995427545
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.2503306957087122,
+          0.012106772487283576,
+          0.10050935516125639,
+          0.008804019173835373
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.0885691992258829,
+          0.0062852995427545,
+          0.008804019173835373,
+          0.06668172929980941
+        ]
+      ],
+      "timestamp_unix": 1774047277.088196
+    },
+    "phase3_final_distribution": {
+      "phase": "phase3_joint_cma",
+      "generation": 12,
+      "lambda": 8,
+      "sigma_internal": 0.5152781605415252,
+      "distribution_mean_search": {
+        "mpc.cost.q_ey": 1.1889476232065987,
+        "mpc.cost.Q_epsi": 3.0140499805080303,
+        "mpc.cost.R_dT": 2.4779934268185753,
+        "mpc.cost.R_u_ddelta_cmd": 2.1496626042157367,
+        "mpc.cost.R_Mtv": -16.845775918027357,
+        "mpc.cost.Q_beta": -0.7123460119448642,
+        "mpc.bounds.max_vx": 14.098498345080333,
+        "mpc.model.mux": 1.224605500053078,
+        "mpc.model.muy": 1.2701256565538905,
+        "mpc.cost.q_sdot": 0.48366180075107534
+      },
+      "distribution_center_theta": {
+        "mpc.cost.q_ey": 3.283623778980242,
+        "mpc.cost.Q_epsi": 20.369730104773986,
+        "mpc.cost.R_dT": 11.917327420615823,
+        "mpc.cost.R_u_ddelta_cmd": 8.581962390723845,
+        "mpc.cost.R_Mtv": 4.8302818786232394e-08,
+        "mpc.cost.Q_beta": 0.49049214619250253,
+        "mpc.bounds.max_vx": 14.098498345080333,
+        "mpc.model.mux": 1.224605500053078,
+        "mpc.model.muy": 1.2701256565538905,
+        "mpc.cost.q_sdot": 0.48366180075107534
+      },
+      "distribution_center_theta_full": {
+        "mpc.cost.q_ey": 3.283623778980242,
+        "mpc.cost.Q_epsi": 20.369730104773986,
+        "mpc.cost.R_dT": 11.917327420615823,
+        "mpc.cost.R_u_ddelta_cmd": 8.581962390723845,
+        "mpc.cost.R_Mtv": 4.8302818786232394e-08,
+        "mpc.cost.Q_beta": 0.49049214619250253,
+        "mpc.bounds.max_vx": 14.098498345080333,
+        "mpc.model.mux": 1.224605500053078,
+        "mpc.model.muy": 1.2701256565538905,
+        "mpc.cost.q_sdot": 0.48366180075107534
+      },
+      "distribution_cov_diag_search": {
+        "mpc.cost.q_ey": 0.06082089129299561,
+        "mpc.cost.Q_epsi": 0.06433537437109042,
+        "mpc.cost.R_dT": 0.04958127503015942,
+        "mpc.cost.R_u_ddelta_cmd": 0.05657478420050188,
+        "mpc.cost.R_Mtv": 0.12462515602528398,
+        "mpc.cost.Q_beta": 0.049593037567184806,
+        "mpc.bounds.max_vx": 2.02787248007413,
+        "mpc.model.mux": 0.02866767063003539,
+        "mpc.model.muy": 0.0174580130528321,
+        "mpc.cost.q_sdot": 0.016014820181352602
+      },
+      "distribution_std_theta_approx": {
+        "mpc.cost.q_ey": 0.8476642819104451,
+        "mpc.cost.Q_epsi": 5.42254309801194,
+        "mpc.cost.R_dT": 2.7542896763722777,
+        "mpc.cost.R_u_ddelta_cmd": 2.129877403523542,
+        "mpc.cost.R_Mtv": 1.8728752617728e-08,
+        "mpc.cost.Q_beta": 0.11337522236325613,
+        "mpc.bounds.max_vx": 1.424033876027579,
+        "mpc.model.mux": 0.16931529945647378,
+        "mpc.model.muy": 0.13212877450741795,
+        "mpc.cost.q_sdot": 0.12654967475798823
+      },
+      "distribution_cov_search_matrix": [
+        [
+          0.06082089129299561,
+          0.0017640918037472976,
+          -0.005202501401265744,
+          0.004482808324595126,
+          0.0002989551750381129,
+          0.0005064594338619567,
+          -0.0029169368226444107,
+          0.005734429867152646,
+          0.005307012582556867,
+          0.00027014454261570014
+        ],
+        [
+          0.0017640918037472976,
+          0.06433537437109042,
+          3.930667866625132e-05,
+          -0.01058556484649679,
+          0.02290522811001304,
+          -0.006363917376436384,
+          -0.004018173189744639,
+          -0.003043433632365606,
+          0.004442726604626042,
+          0.00136359366169781
+        ],
+        [
+          -0.005202501401265744,
+          3.930667866625132e-05,
+          0.04958127503015942,
+          0.004525865650808395,
+          0.003060879435753661,
+          -0.002752038286003267,
+          -0.0002704214141293801,
+          -0.0017859194034217049,
+          -0.004103804694261913,
+          0.0007305068342812401
+        ],
+        [
+          0.004482808324595126,
+          -0.01058556484649679,
+          0.004525865650808395,
+          0.05657478420050188,
+          0.012698938614418672,
+          0.004672316934262372,
+          0.024657799955605752,
+          -0.002464420783122669,
+          -0.0011073587388896067,
+          -0.0021493780637556067
+        ],
+        [
+          0.0002989551750381129,
+          0.02290522811001304,
+          0.003060879435753661,
+          0.012698938614418672,
+          0.12462515602528398,
+          -0.002100040395680822,
+          0.026378757387869572,
+          -0.003039967474672638,
+          -0.002626658546466707,
+          0.0020537606488513797
+        ],
+        [
+          0.0005064594338619567,
+          -0.006363917376436384,
+          -0.002752038286003267,
+          0.004672316934262372,
+          -0.002100040395680822,
+          0.049593037567184806,
+          0.024435824118710384,
+          0.0037335295731822015,
+          -4.366402409411335e-05,
+          -0.0009665008253915267
+        ],
+        [
+          -0.0029169368226444107,
+          -0.004018173189744639,
+          -0.0002704214141293801,
+          0.024657799955605752,
+          0.026378757387869572,
+          0.024435824118710384,
+          2.02787248007413,
+          0.03628636569688548,
+          -0.06382173377343296,
+          -0.05126548000309826
+        ],
+        [
+          0.005734429867152646,
+          -0.003043433632365606,
+          -0.0017859194034217049,
+          -0.002464420783122669,
+          -0.003039967474672638,
+          0.0037335295731822015,
+          0.03628636569688548,
+          0.02866767063003539,
+          -0.0024345652580139354,
+          -0.0010771048183456267
+        ],
+        [
+          0.005307012582556867,
+          0.004442726604626042,
+          -0.004103804694261913,
+          -0.0011073587388896067,
+          -0.002626658546466707,
+          -4.366402409411335e-05,
+          -0.06382173377343296,
+          -0.0024345652580139354,
+          0.0174580130528321,
+          0.0036327500991464204
+        ],
+        [
+          0.00027014454261570014,
+          0.00136359366169781,
+          0.0007305068342812401,
+          -0.0021493780637556067,
+          0.0020537606488513797,
+          -0.0009665008253915267,
+          -0.05126548000309826,
+          -0.0010771048183456267,
+          0.0036327500991464204,
+          0.016014820181352602
+        ]
+      ],
+      "timestamp_unix": 1774069546.8934433,
+      "generation_best_theta": {
+        "mpc.cost.q_ey": 3.0023209548050316,
+        "mpc.cost.Q_epsi": 25.285323608570067,
+        "mpc.cost.R_dT": 12.618309650529024,
+        "mpc.cost.R_u_ddelta_cmd": 10.618764366696073,
+        "mpc.cost.R_Mtv": 5.6848640795737756e-08,
+        "mpc.cost.Q_beta": 0.4136141019326467,
+        "mpc.bounds.max_vx": 14.864400735848118,
+        "mpc.model.mux": 1.130916707244199,
+        "mpc.model.muy": 1.3130960800291491,
+        "mpc.cost.q_sdot": 0.4203909665494281
+      },
+      "generation_best_cost": -25.02410893997132,
+      "global_best_cost_inside_phase": -25.637982477477088
+    }
+  },
+  "results": {
+    "phase1_cost_only_cma": {
+      "best_objective_cost": -16.502437971563115,
+      "best_theta": {
+        "mpc.bounds.max_vx": 13.5,
+        "mpc.model.mux": 0.6,
+        "mpc.model.muy": 0.7,
+        "mpc.cost.q_sdot": 0.1,
+        "mpc.cost.q_ey": 1.6386525541025185,
+        "mpc.cost.Q_epsi": 24.908150527062144,
+        "mpc.cost.R_dT": 16.655583047627395,
+        "mpc.cost.R_u_ddelta_cmd": 6.576107857766092,
+        "mpc.cost.R_Mtv": 5.058118568329254e-08,
+        "mpc.cost.Q_beta": 0.8269191158267248
+      }
+    },
+    "phase2_planner_qsdot_cma": {
+      "best_objective_cost": -24.88854097737466,
+      "best_theta": {
+        "mpc.cost.q_ey": 1.6386525541025185,
+        "mpc.cost.Q_epsi": 24.908150527062144,
+        "mpc.cost.R_dT": 16.655583047627395,
+        "mpc.cost.R_u_ddelta_cmd": 6.576107857766092,
+        "mpc.cost.R_Mtv": 5.058118568329254e-08,
+        "mpc.cost.Q_beta": 0.8269191158267248,
+        "mpc.bounds.max_vx": 16.66765322780345,
+        "mpc.model.mux": 0.9333253451113781,
+        "mpc.model.muy": 1.1377236907145116,
+        "mpc.cost.q_sdot": 0.4511942582200913
+      }
+    },
+    "phase3_joint_cma": {
+      "best_objective_cost": -25.637982477477088,
+      "best_theta": {
+        "mpc.cost.q_ey": 2.38595160416039,
+        "mpc.cost.Q_epsi": 28.283844624886346,
+        "mpc.cost.R_dT": 20.31222806222578,
+        "mpc.cost.R_u_ddelta_cmd": 6.299979013512169,
+        "mpc.cost.R_Mtv": 1.77257092491005e-07,
+        "mpc.cost.Q_beta": 0.3071588994394662,
+        "mpc.bounds.max_vx": 15.661667404840776,
+        "mpc.model.mux": 1.225347811925835,
+        "mpc.model.muy": 1.268068782849293,
+        "mpc.cost.q_sdot": 0.775315207801403
+      }
+    },
+    "global_best": {
+      "best_objective_cost": -25.637982477477088,
+      "best_theta": {
+        "mpc.cost.q_ey": 2.38595160416039,
+        "mpc.cost.Q_epsi": 28.283844624886346,
+        "mpc.cost.R_dT": 20.31222806222578,
+        "mpc.cost.R_u_ddelta_cmd": 6.299979013512169,
+        "mpc.cost.R_Mtv": 1.77257092491005e-07,
+        "mpc.cost.Q_beta": 0.3071588994394662,
+        "mpc.bounds.max_vx": 15.661667404840776,
+        "mpc.model.mux": 1.225347811925835,
+        "mpc.model.muy": 1.268068782849293,
+        "mpc.cost.q_sdot": 0.775315207801403
+      }
+    }
+  }
+}

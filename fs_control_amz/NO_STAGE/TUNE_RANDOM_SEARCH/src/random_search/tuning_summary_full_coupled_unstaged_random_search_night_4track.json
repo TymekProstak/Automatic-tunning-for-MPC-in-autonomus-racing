@@ -1,0 +1,172 @@
+{
+  "config": {
+    "mode": "night_4track",
+    "catkin_ws": "/home/tymek/Desktop/fs_control_amz/NO_STAGE/TUNE_RANDOM_SEARCH",
+    "ws_src": "/home/tymek/Desktop/fs_control_amz/NO_STAGE/TUNE_RANDOM_SEARCH/src",
+    "acados_lib": "/home/tymek/Desktop/fs_control_amz/NO_STAGE/TUNE_RANDOM_SEARCH/src/dv_control/External/acados/install/lib",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "episodes_per_trial": 4,
+    "unstaged_trials": 224,
+    "unstaged_startup": 64,
+    "total_trials": 224,
+    "total_episodes": 896,
+    "pure_sim_hours": 14.933333333333334,
+    "safe_planner": {
+      "mpc.bounds.max_vx": 10.5,
+      "mpc.model.mux": 0.4,
+      "mpc.model.muy": 0.4
+    },
+    "planner_bounds": {
+      "mpc.bounds.max_vx": [
+        8.0,
+        18.0
+      ],
+      "mpc.model.mux": [
+        0.5,
+        1.7
+      ],
+      "mpc.model.muy": [
+        0.5,
+        1.7
+      ]
+    },
+    "cost_bounds": {
+      "mpc.cost.q_ey": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.Q_epsi": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.R_dT": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.R_u_ddelta_cmd": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.Q_beta": [
+        0.01,
+        5.0
+      ],
+      "mpc.cost.q_sdot": [
+        0.001,
+        0.2
+      ],
+      "mpc.cost.R_Mtv": [
+        1e-08,
+        1e-05
+      ]
+    },
+    "all_bounds": {
+      "mpc.bounds.max_vx": [
+        8.0,
+        18.0
+      ],
+      "mpc.model.mux": [
+        0.5,
+        1.7
+      ],
+      "mpc.model.muy": [
+        0.5,
+        1.7
+      ],
+      "mpc.cost.q_ey": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.Q_epsi": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.R_dT": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.R_u_ddelta_cmd": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.Q_beta": [
+        0.01,
+        5.0
+      ],
+      "mpc.cost.q_sdot": [
+        0.001,
+        0.2
+      ],
+      "mpc.cost.R_Mtv": [
+        1e-08,
+        1e-05
+      ]
+    },
+    "good_frac": 0.3,
+    "G_size": 68,
+    "L_size": 156,
+    "critical_crash_multiplier": 1.0,
+    "ucb_weight": 1.0,
+    "common_architecture": "unstaged_joint_random",
+    "slack_tuning": false,
+    "startup_center_theta": {
+      "mpc.bounds.max_vx": 15.300843816236418,
+      "mpc.model.mux": 1.7,
+      "mpc.model.muy": 1.3350313625052561,
+      "mpc.cost.q_ey": 0.21894368504342152,
+      "mpc.cost.Q_epsi": 18.36990976320055,
+      "mpc.cost.R_dT": 0.41422866971149486,
+      "mpc.cost.R_u_ddelta_cmd": 12.475426306784739,
+      "mpc.cost.Q_beta": 0.33790924514692156,
+      "mpc.cost.q_sdot": 0.2,
+      "mpc.cost.R_Mtv": 9.626684191770358e-07
+    },
+    "unstaged_global_random_fraction": 0.35,
+    "unstaged_planner_sigma_inflate": 1.15,
+    "unstaged_planner_sigma_min_frac": 0.1,
+    "unstaged_planner_sigma_max_frac": 0.3,
+    "unstaged_cost_sigma_inflate": 1.1,
+    "unstaged_cost_log_sigma_min_frac": 0.06,
+    "unstaged_cost_log_sigma_max_frac": 0.18,
+    "crash_penalty": 150.0,
+    "crash_time_penalty": 0.05
+  },
+  "results": {
+    "unstaged_joint_random": {
+      "best_objective_cost": -26.652707109863492,
+      "best_theta": {
+        "mpc.bounds.max_vx": 15.300843816236418,
+        "mpc.model.mux": 1.7,
+        "mpc.model.muy": 1.3350313625052561,
+        "mpc.cost.q_ey": 0.21894368504342152,
+        "mpc.cost.Q_epsi": 18.36990976320055,
+        "mpc.cost.R_dT": 0.41422866971149486,
+        "mpc.cost.R_u_ddelta_cmd": 12.475426306784739,
+        "mpc.cost.Q_beta": 0.33790924514692156,
+        "mpc.cost.q_sdot": 0.2,
+        "mpc.cost.R_Mtv": 9.626684191770358e-07
+      }
+    },
+    "global_best": {
+      "best_objective_cost": -26.652707109863492,
+      "best_theta": {
+        "mpc.bounds.max_vx": 15.300843816236418,
+        "mpc.model.mux": 1.7,
+        "mpc.model.muy": 1.3350313625052561,
+        "mpc.cost.q_ey": 0.21894368504342152,
+        "mpc.cost.Q_epsi": 18.36990976320055,
+        "mpc.cost.R_dT": 0.41422866971149486,
+        "mpc.cost.R_u_ddelta_cmd": 12.475426306784739,
+        "mpc.cost.Q_beta": 0.33790924514692156,
+        "mpc.cost.q_sdot": 0.2,
+        "mpc.cost.R_Mtv": 9.626684191770358e-07
+      }
+    }
+  }
+}

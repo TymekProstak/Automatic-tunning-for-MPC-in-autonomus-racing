@@ -1,0 +1,182 @@
+{
+  "config": {
+    "mode": "night_4track",
+    "catkin_ws": "/home/tymek/Desktop/fs_control_amz/TUNE_RANDOM_SEARCH",
+    "ws_src": "/home/tymek/Desktop/fs_control_amz/TUNE_RANDOM_SEARCH/src",
+    "acados_lib": "/home/tymek/Desktop/fs_control_amz/TUNE_RANDOM_SEARCH/src/dv_control/External/acados/install/lib",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "episodes_per_trial": 4,
+    "phase1_trials": 64,
+    "phase1_startup": 24,
+    "phase2_trials": 64,
+    "phase2_startup": 16,
+    "phase3_trials": 96,
+    "phase3_startup": 24,
+    "total_trials": 224,
+    "total_episodes": 896,
+    "pure_sim_hours": 14.933333333333334,
+    "safe_planner": {
+      "mpc.bounds.max_vx": 13.5,
+      "mpc.model.mux": 0.6,
+      "mpc.model.muy": 0.7,
+      "mpc.cost.q_sdot": 0.1
+    },
+    "planner_bounds": {
+      "mpc.bounds.max_vx": [
+        8.0,
+        18.0
+      ],
+      "mpc.model.mux": [
+        0.4,
+        1.7
+      ],
+      "mpc.model.muy": [
+        0.4,
+        1.7
+      ],
+      "mpc.cost.q_sdot": [
+        0.1,
+        1.0
+      ]
+    },
+    "cost_bounds": {
+      "mpc.cost.q_ey": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.Q_epsi": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_dT": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_u_ddelta_cmd": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_Mtv": [
+        1e-08,
+        1e-05
+      ],
+      "mpc.cost.Q_beta": [
+        0.1,
+        10.0
+      ]
+    },
+    "good_frac": 0.3,
+    "phase1_G_size": 20,
+    "phase1_L_size": 44,
+    "phase1_critical_crash_multiplier": 1.0,
+    "phase2_critical_crash_multiplier": 1.0,
+    "phase3_critical_crash_multiplier": 1.0,
+    "ucb_weight": 1.0,
+    "common_stage_architecture": "phase1_cost_only_phase2_planner_qsdot_phase3_joint",
+    "slack_tuning": false,
+    "stage3_center_theta": {
+      "mpc.bounds.max_vx": 16.130804951157504,
+      "mpc.model.mux": 1.48,
+      "mpc.model.muy": 1.0681269980239387,
+      "mpc.cost.q_sdot": 0.7566953921314677,
+      "mpc.cost.q_ey": 4.345503688385111,
+      "mpc.cost.Q_epsi": 78.28515726374239,
+      "mpc.cost.R_dT": 46.43820059790286,
+      "mpc.cost.R_u_ddelta_cmd": 30.164991407074805,
+      "mpc.cost.R_Mtv": 1e-05,
+      "mpc.cost.Q_beta": 0.5068565649207069
+    },
+    "stage3_planner_safe_blend": 0.2,
+    "top_k_cost_anchors": 3,
+    "top_k_planner_anchors": 5,
+    "phase2_safe_planner_startup_frac": 0.35,
+    "phase2_safe_planner_sigma_frac_vmax": 0.3,
+    "phase2_safe_planner_sigma_frac_mu": 0.3,
+    "phase2_safe_planner_sigma_frac_qsdot": 0.3,
+    "stage1_global_random_fraction": 0.3,
+    "stage2_global_random_fraction": 0.15,
+    "stage3_global_random_fraction": 0.35,
+    "stage1_cost_sigma_inflate": 1.1,
+    "stage1_cost_log_sigma_min_frac": 0.1,
+    "stage1_cost_log_sigma_max_frac": 0.35,
+    "stage2_planner_sigma_inflate": 1.1,
+    "stage2_planner_sigma_min_frac": 0.1,
+    "stage2_planner_sigma_max_frac": 0.3,
+    "stage3_planner_sigma_inflate": 1.15,
+    "stage3_planner_sigma_min_frac": 0.1,
+    "stage3_planner_sigma_max_frac": 0.35,
+    "stage3_cost_sigma_inflate": 1.1,
+    "stage3_cost_log_sigma_min_frac": 0.06,
+    "stage3_cost_log_sigma_max_frac": 0.18,
+    "crash_penalty": 150.0,
+    "crash_time_penalty": 0.05
+  },
+  "results": {
+    "phase1_cost_only_random": {
+      "best_objective_cost": -15.412907785744997,
+      "best_theta": {
+        "mpc.bounds.max_vx": 13.5,
+        "mpc.model.mux": 0.6,
+        "mpc.model.muy": 0.7,
+        "mpc.cost.q_sdot": 0.1,
+        "mpc.cost.q_ey": 4.345503688385111,
+        "mpc.cost.Q_epsi": 78.28515726374239,
+        "mpc.cost.R_dT": 46.43820059790286,
+        "mpc.cost.R_u_ddelta_cmd": 30.164991407074805,
+        "mpc.cost.R_Mtv": 1e-05,
+        "mpc.cost.Q_beta": 0.5068565649207069
+      }
+    },
+    "phase2_planner_qsdot_random": {
+      "best_objective_cost": -25.497611058132165,
+      "best_theta": {
+        "mpc.cost.q_ey": 4.345503688385111,
+        "mpc.cost.Q_epsi": 78.28515726374239,
+        "mpc.cost.R_dT": 46.43820059790286,
+        "mpc.cost.R_u_ddelta_cmd": 30.164991407074805,
+        "mpc.cost.R_Mtv": 1e-05,
+        "mpc.cost.Q_beta": 0.5068565649207069,
+        "mpc.bounds.max_vx": 16.78850618894688,
+        "mpc.model.mux": 1.7,
+        "mpc.model.muy": 1.1601587475299233,
+        "mpc.cost.q_sdot": 0.9208692401643346
+      }
+    },
+    "phase3_joint_random": {
+      "best_objective_cost": -25.55682665793397,
+      "best_theta": {
+        "mpc.bounds.max_vx": 18.0,
+        "mpc.model.mux": 1.7,
+        "mpc.model.muy": 1.0528229112174403,
+        "mpc.cost.q_sdot": 1.0,
+        "mpc.cost.q_ey": 2.9798402999929485,
+        "mpc.cost.Q_epsi": 35.70479119982544,
+        "mpc.cost.R_dT": 30.10664844328917,
+        "mpc.cost.R_u_ddelta_cmd": 21.210001448941988,
+        "mpc.cost.R_Mtv": 2.580331944986851e-06,
+        "mpc.cost.Q_beta": 0.6615387248271493
+      }
+    },
+    "global_best": {
+      "best_objective_cost": -25.55682665793397,
+      "best_theta": {
+        "mpc.bounds.max_vx": 18.0,
+        "mpc.model.mux": 1.7,
+        "mpc.model.muy": 1.0528229112174403,
+        "mpc.cost.q_sdot": 1.0,
+        "mpc.cost.q_ey": 2.9798402999929485,
+        "mpc.cost.Q_epsi": 35.70479119982544,
+        "mpc.cost.R_dT": 30.10664844328917,
+        "mpc.cost.R_u_ddelta_cmd": 21.210001448941988,
+        "mpc.cost.R_Mtv": 2.580331944986851e-06,
+        "mpc.cost.Q_beta": 0.6615387248271493
+      }
+    }
+  }
+}

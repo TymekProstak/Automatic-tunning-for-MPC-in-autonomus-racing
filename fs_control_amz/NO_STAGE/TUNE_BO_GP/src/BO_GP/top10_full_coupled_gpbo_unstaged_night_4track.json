@@ -1,0 +1,31 @@
+{
+  "episodes_done": 4,
+  "trials_done": 1,
+  "top10": [
+    {
+      "rank": 1,
+      "candidate_id": 1,
+      "phase": "unstaged_joint_gpbo_full_coupled",
+      "phase_trial": 0,
+      "objective_cost": 152.87144755560757,
+      "mean_cost": 152.501725,
+      "std_cost": 0.3697225556075842,
+      "robust_cost": 152.87144755560757,
+      "crashes": 4,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "mpc.bounds.max_vx": 10.5,
+        "mpc.model.mux": 0.4,
+        "mpc.model.muy": 0.4,
+        "mpc.cost.q_ey": 10.000000000000002,
+        "mpc.cost.Q_epsi": 10.000000000000002,
+        "mpc.cost.R_dT": 10.000000000000002,
+        "mpc.cost.R_u_ddelta_cmd": 10.000000000000002,
+        "mpc.cost.Q_beta": 1.0000000000000002,
+        "mpc.cost.q_sdot": 0.55,
+        "mpc.cost.R_Mtv": 3.1622776601683734e-07
+      }
+    }
+  ],
+  "timestamp_unix": 1773875853.8468544
+}

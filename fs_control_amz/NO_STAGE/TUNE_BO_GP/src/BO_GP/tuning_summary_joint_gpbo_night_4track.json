@@ -1,0 +1,85 @@
+{
+  "config": {
+    "mode": "night_4track",
+    "catkin_ws": "/home/tymek/Desktop/fs_control_amz/NO_STAGE/TUNE_BO_GP",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "total_trials": 224,
+    "startup_trials": 64,
+    "total_episodes": 896,
+    "pure_sim_hours": 14.933333333333334,
+    "safe_planner_baseline": {
+      "mpc.bounds.max_vx": 13.5,
+      "mpc.model.mux": 0.6,
+      "mpc.model.muy": 0.7,
+      "mpc.cost.q_sdot": 0.1
+    },
+    "all_bounds": {
+      "mpc.cost.q_ey": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.Q_epsi": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_dT": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_u_ddelta_cmd": [
+        1.0,
+        100.0
+      ],
+      "mpc.cost.R_Mtv": [
+        1e-08,
+        1e-05
+      ],
+      "mpc.cost.Q_beta": [
+        0.1,
+        10.0
+      ],
+      "mpc.bounds.max_vx": [
+        8.0,
+        18.0
+      ],
+      "mpc.model.mux": [
+        0.4,
+        1.7
+      ],
+      "mpc.model.muy": [
+        0.4,
+        1.7
+      ],
+      "mpc.cost.q_sdot": [
+        0.1,
+        1.0
+      ]
+    },
+    "common_critical_crash_multiplier": 1.0,
+    "gp_kappa": 2.4,
+    "ucb_weight": 1.0
+  },
+  "results": {
+    "global_best": {
+      "best_objective_cost": -25.911174918678615,
+      "best_theta": {
+        "mpc.cost.q_ey": 1.5731558689720377,
+        "mpc.cost.Q_epsi": 31.933851750662274,
+        "mpc.cost.R_dT": 1.7340740724816857,
+        "mpc.cost.R_u_ddelta_cmd": 2.1872519257754877,
+        "mpc.cost.R_Mtv": 2.8093931226608107e-07,
+        "mpc.cost.Q_beta": 1.9639751793796,
+        "mpc.bounds.max_vx": 14.776261241118675,
+        "mpc.model.mux": 1.3459442162281872,
+        "mpc.model.muy": 1.3923327887031718,
+        "mpc.cost.q_sdot": 0.3246342929295847
+      }
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "config": {
+    "mode": "night_4track",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "episodes_per_trial": 4,
+    "phase1_trials": 64,
+    "phase1_startup": 24,
+    "phase2_trials": 64,
+    "phase2_startup": 16,
+    "phase3_trials": 96,
+    "phase3_startup": 24,
+    "total_trials": 224,
+    "total_episodes": 896,
+    "pure_sim_hours": 14.933333333333334,
+    "safe_planner": {
+      "velocity_planner.v_max": 8.0,
+      "velocity_planner.mux_acc": 0.4,
+      "velocity_planner.mux_dec": 0.35,
+      "velocity_planner.muy": 0.5
+    },
+    "planner_bounds": {
+      "velocity_planner.v_max": [
+        8.0,
+        18.0
+      ],
+      "velocity_planner.mux_acc": [
+        0.3,
+        1.7
+      ],
+      "velocity_planner.mux_dec": [
+        0.3,
+        1.7
+      ],
+      "velocity_planner.muy": [
+        0.3,
+        1.7
+      ]
+    },
+    "cost_bounds": {
+      "mpc.cost.Q_y": [
+        1,
+        100.0
+      ],
+      "mpc.cost.Q_psi": [
+        1,
+        100.0
+      ],
+      "mpc.cost.R_ddelta": [
+        1,
+        100.0
+      ]
+    },
+    "good_frac": 0.3,
+    "phase1_G_size": 20,
+    "phase1_L_size": 44,
+    "common_critical_crash_multiplier": 1.0,
+    "stage3_center_theta": {
+      "velocity_planner.v_max": 9.227465827751065,
+      "velocity_planner.mux_acc": 0.3,
+      "velocity_planner.mux_dec": 0.9957620700970982,
+      "velocity_planner.muy": 0.6850694734488375,
+      "mpc.cost.Q_y": 1.917167143821252,
+      "mpc.cost.Q_psi": 37.51244700503568,
+      "mpc.cost.R_ddelta": 1.0
+    },
+    "top_k_cost_anchors": 3,
+    "top_k_planner_anchors": 5,
+    "phase2_safe_planner_startup_frac": 0.35,
+    "phase2_safe_planner_sigma_frac_vmax": 0.3,
+    "phase2_safe_planner_sigma_frac_mu": 0.3,
+    "stage1_global_random_fraction": 0.3,
+    "stage2_global_random_fraction": 0.15,
+    "stage3_global_random_fraction": 0.35,
+    "stage1_cost_sigma_inflate": 1.1,
+    "stage1_cost_log_sigma_min_frac": 0.1,
+    "stage1_cost_log_sigma_max_frac": 0.35,
+    "stage2_planner_sigma_inflate": 1.1,
+    "stage2_planner_sigma_min_frac": 0.1,
+    "stage2_planner_sigma_max_frac": 0.3,
+    "stage3_planner_sigma_inflate": 1.15,
+    "stage3_planner_sigma_min_frac": 0.1,
+    "stage3_planner_sigma_max_frac": 0.3,
+    "stage3_cost_sigma_inflate": 1.1,
+    "stage3_cost_log_sigma_min_frac": 0.06,
+    "stage3_cost_log_sigma_max_frac": 0.18,
+    "crash_penalty": 160.0,
+    "crash_time_penalty": 0.5
+  },
+  "results": {
+    "phase1_cost_only_random": {
+      "best_cost": -9.302451137401754,
+      "best_theta": {
+        "velocity_planner.v_max": 8.0,
+        "velocity_planner.mux_acc": 0.4,
+        "velocity_planner.mux_dec": 0.35,
+        "velocity_planner.muy": 0.5,
+        "mpc.cost.Q_y": 1.917167143821252,
+        "mpc.cost.Q_psi": 37.51244700503568,
+        "mpc.cost.R_ddelta": 1.0
+      }
+    },
+    "phase2_planner_only_random": {
+      "best_cost": -11.21689423772383,
+      "best_theta": {
+        "mpc.cost.Q_y": 1.917167143821252,
+        "mpc.cost.Q_psi": 37.51244700503568,
+        "mpc.cost.R_ddelta": 1.0,
+        "velocity_planner.v_max": 9.227465827751065,
+        "velocity_planner.mux_acc": 0.3,
+        "velocity_planner.mux_dec": 0.9957620700970982,
+        "velocity_planner.muy": 0.6850694734488375
+      }
+    },
+    "phase3_joint_random": {
+      "best_cost": -13.853697886724348,
+      "best_theta": {
+        "velocity_planner.v_max": 9.227465827751065,
+        "velocity_planner.mux_acc": 0.3,
+        "velocity_planner.mux_dec": 0.9957620700970982,
+        "velocity_planner.muy": 0.6850694734488375,
+        "mpc.cost.Q_y": 7.474341954118485,
+        "mpc.cost.Q_psi": 100.0,
+        "mpc.cost.R_ddelta": 1.0
+      }
+    },
+    "global_best": {
+      "best_cost": -13.853697886724348,
+      "best_theta": {
+        "velocity_planner.v_max": 9.227465827751065,
+        "velocity_planner.mux_acc": 0.3,
+        "velocity_planner.mux_dec": 0.9957620700970982,
+        "velocity_planner.muy": 0.6850694734488375,
+        "mpc.cost.Q_y": 7.474341954118485,
+        "mpc.cost.Q_psi": 100.0,
+        "mpc.cost.R_ddelta": 1.0
+      }
+    }
+  }
+}

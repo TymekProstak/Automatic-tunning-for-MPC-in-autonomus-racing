@@ -1,0 +1,197 @@
+{
+  "episodes_done": 896,
+  "trials_done": 224,
+  "top10": [
+    {
+      "rank": 1,
+      "candidate_id": 129,
+      "phase": "phase3_joint_gpbo",
+      "phase_trial": 0,
+      "mean_cost": -15.647537167264838,
+      "std_cost": 0.7622376077351635,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 13.432584206432129,
+        "velocity_planner.mux_acc": 0.30509939813802006,
+        "velocity_planner.mux_dec": 1.12909489998315,
+        "velocity_planner.muy": 0.790382848894366,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 2,
+      "candidate_id": 131,
+      "phase": "phase3_joint_gpbo",
+      "phase_trial": 2,
+      "mean_cost": -15.567832981452023,
+      "std_cost": 0.7776303310479784,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 13.015660829606018,
+        "velocity_planner.mux_acc": 0.32902253490633515,
+        "velocity_planner.mux_dec": 0.7779466616012495,
+        "velocity_planner.muy": 0.7891286203903454,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 3,
+      "candidate_id": 119,
+      "phase": "phase2_planner_only_gpbo",
+      "phase_trial": 54,
+      "mean_cost": -15.530985335359748,
+      "std_cost": 0.8328654271402489,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 13.432584206432129,
+        "velocity_planner.mux_acc": 0.30509939813802006,
+        "velocity_planner.mux_dec": 1.12909489998315,
+        "velocity_planner.muy": 0.790382848894366,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 4,
+      "candidate_id": 114,
+      "phase": "phase2_planner_only_gpbo",
+      "phase_trial": 49,
+      "mean_cost": -15.461447485311762,
+      "std_cost": 0.9883827146882397,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 13.015660829606018,
+        "velocity_planner.mux_acc": 0.32902253490633515,
+        "velocity_planner.mux_dec": 0.7779466616012495,
+        "velocity_planner.muy": 0.7891286203903454,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 5,
+      "candidate_id": 133,
+      "phase": "phase3_joint_gpbo",
+      "phase_trial": 4,
+      "mean_cost": -15.261527347720675,
+      "std_cost": 0.835912677279326,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 12.673585855287737,
+        "velocity_planner.mux_acc": 0.32998430754228136,
+        "velocity_planner.mux_dec": 0.36428070417418296,
+        "velocity_planner.muy": 0.7767337381175349,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 6,
+      "candidate_id": 134,
+      "phase": "phase3_joint_gpbo",
+      "phase_trial": 5,
+      "mean_cost": -15.230241375382489,
+      "std_cost": 0.862675074617511,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 13.07867991700974,
+        "velocity_planner.mux_acc": 0.3513887074596073,
+        "velocity_planner.mux_dec": 0.36992712255931315,
+        "velocity_planner.muy": 0.755059433621811,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 7,
+      "candidate_id": 117,
+      "phase": "phase2_planner_only_gpbo",
+      "phase_trial": 52,
+      "mean_cost": -15.1732043094851,
+      "std_cost": 1.0312552530148973,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 14.051585402827543,
+        "velocity_planner.mux_acc": 0.31140389662562457,
+        "velocity_planner.mux_dec": 0.3582499810632394,
+        "velocity_planner.muy": 0.7907673028227091,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 8,
+      "candidate_id": 121,
+      "phase": "phase2_planner_only_gpbo",
+      "phase_trial": 56,
+      "mean_cost": -15.128125815648877,
+      "std_cost": 0.882933559351121,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 12.673585855287737,
+        "velocity_planner.mux_acc": 0.32998430754228136,
+        "velocity_planner.mux_dec": 0.36428070417418296,
+        "velocity_planner.muy": 0.7767337381175349,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 9,
+      "candidate_id": 107,
+      "phase": "phase2_planner_only_gpbo",
+      "phase_trial": 42,
+      "mean_cost": -15.058485860243264,
+      "std_cost": 1.0078480897567363,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 13.07867991700974,
+        "velocity_planner.mux_acc": 0.3513887074596073,
+        "velocity_planner.mux_dec": 0.36992712255931315,
+        "velocity_planner.muy": 0.755059433621811,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    },
+    {
+      "rank": 10,
+      "candidate_id": 132,
+      "phase": "phase3_joint_gpbo",
+      "phase_trial": 3,
+      "mean_cost": -14.979341449546512,
+      "std_cost": 1.1199088004534925,
+      "crashes": 0,
+      "critical_crash_multiplier": 1.0,
+      "theta": {
+        "velocity_planner.v_max": 14.051585402827543,
+        "velocity_planner.mux_acc": 0.31140389662562457,
+        "velocity_planner.mux_dec": 0.3582499810632394,
+        "velocity_planner.muy": 0.7907673028227091,
+        "mpc.cost.Q_y": 5.808352591149586,
+        "mpc.cost.Q_psi": 90.22205846933433,
+        "mpc.cost.R_ddelta": 1.024834876260964
+      }
+    }
+  ],
+  "timestamp_unix": 1773638250.6976395
+}

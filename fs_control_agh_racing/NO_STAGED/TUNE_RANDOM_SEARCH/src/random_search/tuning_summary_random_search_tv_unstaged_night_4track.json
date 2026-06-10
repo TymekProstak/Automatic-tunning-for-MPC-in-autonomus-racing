@@ -1,0 +1,114 @@
+{
+  "config": {
+    "profile_name": "night_4track",
+    "catkin_ws": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_RANDOM_SEARCH",
+    "ws_src": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_RANDOM_SEARCH/src",
+    "acados_lib": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_RANDOM_SEARCH/src/dv_control/External/acados/install/lib",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "episodes_per_trial": 4,
+    "total_trials": 208,
+    "total_episodes": 832,
+    "pure_sim_hours": 13.866666666666667,
+    "ucb_weight": 1.0,
+    "common_critical_crash_multiplier": 1.0,
+    "unstaged_trials": 208,
+    "unstaged_startup": 52,
+    "safe_planner": {
+      "velocity_planner.v_max": 13.5,
+      "velocity_planner.mux_acc": 0.7,
+      "velocity_planner.mux_dec": 0.6,
+      "velocity_planner.muy": 0.75
+    },
+    "planner_bounds": {
+      "velocity_planner.v_max": [
+        8.0,
+        18.0
+      ],
+      "velocity_planner.mux_acc": [
+        0.3,
+        1.7
+      ],
+      "velocity_planner.mux_dec": [
+        0.3,
+        1.7
+      ],
+      "velocity_planner.muy": [
+        0.3,
+        1.7
+      ]
+    },
+    "cost_bounds": {
+      "mpc.cost.Q_y": [
+        1,
+        100.0
+      ],
+      "mpc.cost.Q_psi": [
+        1,
+        100.0
+      ],
+      "mpc.cost.R_ddelta": [
+        1,
+        100.0
+      ],
+      "mpc.cost.R_tv": [
+        1e-08,
+        1e-05
+      ]
+    },
+    "good_frac": 0.3,
+    "G_size_final": 63,
+    "L_size_final": 145,
+    "unstaged_safe_startup_frac": 0.3,
+    "unstaged_safe_planner_sigma_frac_vmax": 0.3,
+    "unstaged_safe_planner_sigma_frac_mu": 0.3,
+    "unstaged_global_random_fraction": 0.35,
+    "unstaged_dynamic_g_center_prob": 0.5,
+    "unstaged_local_planner_sigma_frac_vmax": 0.35,
+    "unstaged_local_planner_sigma_frac_mu": 0.35,
+    "unstaged_local_cost_log_sigma": 0.1,
+    "startup_anchor_count": 52,
+    "run_log_path": "/home/tymek/Desktop/fs_control_agh_racing/NO_STAGED/TUNE_RANDOM_SEARCH/src/random_search/tuning_run_random_search_tv_unstaged_night_4track.jsonl",
+    "equivalent_staged_budget": {
+      "phase1_trials": 48,
+      "phase1_startup": 12,
+      "phase2_trials": 64,
+      "phase2_startup": 16,
+      "phase3_trials": 96,
+      "phase3_startup": 24
+    }
+  },
+  "results": {
+    "unstaged_joint_random": {
+      "best_objective": -22.97017548065055,
+      "best_theta": {
+        "velocity_planner.v_max": 18.0,
+        "velocity_planner.mux_acc": 0.3,
+        "velocity_planner.mux_dec": 0.48044543386026173,
+        "velocity_planner.muy": 1.5174388143742124,
+        "mpc.cost.Q_y": 11.843426955404217,
+        "mpc.cost.Q_psi": 27.20630920933727,
+        "mpc.cost.R_ddelta": 5.130703927012787,
+        "mpc.cost.R_tv": 5.185342184000578e-06
+      }
+    },
+    "global_best": {
+      "best_objective": -22.97017548065055,
+      "best_theta": {
+        "velocity_planner.v_max": 18.0,
+        "velocity_planner.mux_acc": 0.3,
+        "velocity_planner.mux_dec": 0.48044543386026173,
+        "velocity_planner.muy": 1.5174388143742124,
+        "mpc.cost.Q_y": 11.843426955404217,
+        "mpc.cost.Q_psi": 27.20630920933727,
+        "mpc.cost.R_ddelta": 5.130703927012787,
+        "mpc.cost.R_tv": 5.185342184000578e-06
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "episodes_done": 4,
+  "trials_done": 1,
+  "top10": [
+    {
+      "rank": 1,
+      "candidate_id": 1,
+      "phase": "phase1_cost_only_tpe",
+      "phase_trial": 0,
+      "objective_cost": 168.2890460179808,
+      "mean_cost": 129.6566489375,
+      "std_cost": 38.6323970804808,
+      "robust_cost": 168.2890460179808,
+      "crashes": 3,
+      "critical_crash_multiplier": 1.2,
+      "theta": {
+        "mpc.bounds.max_vx": 14.5,
+        "mpc.model.mux": 0.7,
+        "mpc.model.muy": 0.8,
+        "mpc.cost.q_ey": 0.23167631400005567,
+        "mpc.cost.Q_epsi": 0.17587054466321211,
+        "mpc.cost.R_dT": 0.6562100202681553,
+        "mpc.cost.R_u_ddelta_cmd": 6.592162587323201,
+        "mpc.cost.Q_beta": 1.2741636203381916,
+        "mpc.cost.q_sdot": 0.0013518656296114097,
+        "mpc.cost.R_Mtv": 1.637534175763113e-07
+      }
+    }
+  ],
+  "timestamp_unix": 1773582205.448365
+}

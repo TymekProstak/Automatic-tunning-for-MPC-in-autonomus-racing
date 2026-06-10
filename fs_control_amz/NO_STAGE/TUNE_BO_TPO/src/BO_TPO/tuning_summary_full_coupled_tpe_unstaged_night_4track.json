@@ -1,0 +1,123 @@
+{
+  "config": {
+    "mode": "night_4track",
+    "catkin_ws": "/home/tymek/Desktop/fs_control_amz/NO_STAGE/TUNE_BO_TPO",
+    "ws_src": "/home/tymek/Desktop/fs_control_amz/NO_STAGE/TUNE_BO_TPO/src",
+    "acados_lib": "/home/tymek/Desktop/fs_control_amz/NO_STAGE/TUNE_BO_TPO/src/dv_control/External/acados/install/lib",
+    "sim_time_s": 60,
+    "tracks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "episodes_per_trial": 4,
+    "unstaged_phase_name": "unstaged_joint_tpe_full_coupled",
+    "unstaged_trials": 224,
+    "unstaged_startup": 64,
+    "unstaged_effective_trials": 160,
+    "total_trials": 224,
+    "total_episodes": 896,
+    "pure_sim_hours": 14.933333333333334,
+    "safe_planner": {
+      "mpc.bounds.max_vx": 10.5,
+      "mpc.model.mux": 0.4,
+      "mpc.model.muy": 0.4,
+      "mpc.cost.q_sdot": 0.01
+    },
+    "planner_bounds": {
+      "mpc.bounds.max_vx": [
+        8.0,
+        18.0
+      ],
+      "mpc.model.mux": [
+        0.5,
+        1.7
+      ],
+      "mpc.model.muy": [
+        0.5,
+        1.7
+      ],
+      "mpc.cost.q_sdot": [
+        0.001,
+        0.2
+      ]
+    },
+    "cost_bounds": {
+      "mpc.cost.q_ey": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.Q_epsi": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.R_dT": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.R_u_ddelta_cmd": [
+        0.1,
+        30.0
+      ],
+      "mpc.cost.Q_beta": [
+        0.01,
+        5.0
+      ],
+      "mpc.cost.R_Mtv": [
+        1e-08,
+        1e-05
+      ]
+    },
+    "good_frac": 0.3,
+    "g_size_final": 68,
+    "l_size_final": 156,
+    "unstaged_critical_crash_multiplier": 1.0,
+    "unstaged_safe_cost_startup_frac": 0.4,
+    "unstaged_safe_planner_cloud_frac": 0.35,
+    "safe_planner_sigma_frac_vmax": 0.3,
+    "safe_planner_sigma_frac_mu": 0.3,
+    "safe_planner_sigma_frac_qsdot": 0.3,
+    "tpe_n_ei_candidates": 96,
+    "kde_bw_min_frac": 0.03,
+    "kde_bw_max_frac": 0.35,
+    "kde_bw_fallback_frac": 0.12,
+    "ucb_weight": 1.0,
+    "crash_penalty": 150.0,
+    "crash_time_penalty": 0.05,
+    "slack_tuning": false,
+    "q_sdot_tuned": true
+  },
+  "results": {
+    "unstaged_joint_tpe_full_coupled": {
+      "best_objective_cost": -23.077298890040097,
+      "best_theta": {
+        "mpc.bounds.max_vx": 13.650102924064786,
+        "mpc.model.mux": 0.7082728942372447,
+        "mpc.model.muy": 1.3933437696709499,
+        "mpc.cost.q_sdot": 0.1595842650083201,
+        "mpc.cost.q_ey": 0.8338507492342648,
+        "mpc.cost.Q_epsi": 0.26593364715522744,
+        "mpc.cost.R_dT": 3.1915235770163037,
+        "mpc.cost.R_u_ddelta_cmd": 9.991547266976001,
+        "mpc.cost.Q_beta": 0.02317678063961286,
+        "mpc.cost.R_Mtv": 1.0971100226393686e-07
+      }
+    },
+    "global_best": {
+      "best_objective_cost": -23.077298890040097,
+      "best_theta": {
+        "mpc.bounds.max_vx": 13.650102924064786,
+        "mpc.model.mux": 0.7082728942372447,
+        "mpc.model.muy": 1.3933437696709499,
+        "mpc.cost.q_sdot": 0.1595842650083201,
+        "mpc.cost.q_ey": 0.8338507492342648,
+        "mpc.cost.Q_epsi": 0.26593364715522744,
+        "mpc.cost.R_dT": 3.1915235770163037,
+        "mpc.cost.R_u_ddelta_cmd": 9.991547266976001,
+        "mpc.cost.Q_beta": 0.02317678063961286,
+        "mpc.cost.R_Mtv": 1.0971100226393686e-07
+      }
+    }
+  }
+}

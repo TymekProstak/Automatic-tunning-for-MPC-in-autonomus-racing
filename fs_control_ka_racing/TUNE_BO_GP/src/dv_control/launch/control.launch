@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="dv_control" type="dv_control_node" name="control" output="screen" />
+</launch>

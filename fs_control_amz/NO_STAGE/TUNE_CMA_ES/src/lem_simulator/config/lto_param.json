@@ -1,0 +1,44 @@
+{
+      "lap_time_optimizer": {
+        "lto_params": {
+          "g": 9.81,
+          "v_min": 3.0,
+          "v_max": 17.0,
+          "lf": 0.738,
+          "lr": 0.792,
+          "Cm": 2391.0,
+          "Cr0": 25.0,
+          "Cd" : 0.814,
+          "Cl": 1.88,
+          "max_drive_power": 80000.0,
+          "max_brake_power": 80000.0,
+          "max_delta": 0.4,
+          "min_delta": -0.4,
+          "max_d_delta": 0.8,
+          "min_d_delta": -0.8,
+          "max_d_T": 50.0,
+          "min_d_T": -50.0,
+          "lto_max_tv": 2000.0,
+          "lto_min_tv": -2000.0,
+          "Fz_nom": 490.0,
+          "mu_y": 1.6,
+          "mu_x": 1.6,
+          "C": 1.5,
+          "D": 1.737,
+          "B": 10.23,
+          "length": 2.8835,
+          "width": 1.445,
+          "track_width": 2.5,
+          "d_delta_cost": 0.9,
+          "d_T_cost": 0.12,
+          "beta_cost": 5.0,
+          "s_dot_cost": -3.0,
+          "lto_tv_cost": 1.0,
+          "m": 193.0,
+          "Iz": 85.0,
+          "ds": 0.5,
+          "saftey_factor": 0.85
+        }
+      }
+    
+  }

@@ -1,0 +1,21 @@
+.idea/*
+scripts/.idea/*
+scripts/__pycache__/*
+scripts/venv/bin/*
+scripts/venv/*
+scripts/*.pyc
+
+
+# Ignoruj folder zewnętrzny (external)
+External/
+External/**
+
+# Ignoruj wygenerowane pliki solvera
+mpc_solver/acados_solver_generated/
+mpc_solver/acados_ocp_ltv.json
+
+# Ignoruj inne pliki tymczasowe
+*.log
+*.tmp
+*.swp
+*.bak
